@@ -1,0 +1,50 @@
+---
+title: ViFi Help Center
+description: Plain-English guides to setting up and running ViFi, the AI phone assistant that answers your business calls.
+template: splash
+hero:
+  tagline: Everything you need to set up ViFi, understand what it does on every call, and fix things when they go sideways. Written for business owners, not engineers.
+  actions:
+    - text: Set up ViFi in 10 minutes
+      link: /start-here/setup-guide/
+      icon: right-arrow
+    - text: Open the ViFi app
+      link: https://app.vifi.us
+      icon: external
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+	<Card title="Start here" icon="rocket">
+		What ViFi does, creating your account, the four-step Setup Guide, and forwarding your calls.
+		[Get started](/start-here/what-vifi-does/)
+	</Card>
+	<Card title="Your AI agent" icon="star">
+		Greeting, voice, personality, business hours, knowledge base, transfers, and recording settings.
+		[Shape your agent](/your-agent/business-profile/)
+	</Card>
+	<Card title="Calls, messages and callers" icon="phone">
+		Reading a call, briefings and transcripts, caller profiles, blocked callers, and notifications.
+		[See what callers gave you](/calls-and-callers/dashboard/)
+	</Card>
+	<Card title="Connect your tools" icon="puzzle">
+		HubSpot, Slack, Gmail, Google Calendar, Calendly, Square, Discord, and the website widget.
+		[Connect an integration](/connect-your-tools/overview/)
+	</Card>
+	<Card title="Billing" icon="seti:license">
+		Plans, the free trial, usage and spending guardrails, invoices, and changing or cancelling.
+		[Understand your bill](/billing/plans-and-pricing/)
+	</Card>
+	<Card title="Fix a problem" icon="warning">
+		Calls not reaching ViFi, the agent saying the wrong thing, missing briefings, and more.
+		[Troubleshoot](/fix-a-problem/calls-not-reaching-vifi/)
+	</Card>
+</CardGrid>
+
+<LinkCard
+	title="What's new"
+	description="Recent improvements to ViFi, in plain English."
+	href="/whats-new/"
+/>

@@ -1,0 +1,14 @@
+{
+  "id": "/",
+  "name": "ViFi Help Center",
+  "short_name": "ViFi Help",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "theme_color": "#f8fafc",
+  "background_color": "#f8fafc",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}

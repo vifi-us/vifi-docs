@@ -1,0 +1,20 @@
+---
+import Default from '@astrojs/starlight/components/PageTitle.astro';
+import StatusPill from './StatusPill.astro';
+
+const { entry } = Astro.locals.starlightRoute;
+const status = entry.data.status;
+const note = entry.data.statusNote;
+---
+
+{
+	status ? (
+		<div class="vifi-title">
+			<Default><slot /></Default>
+			<StatusPill status={status} />
+		</div>
+	) : (
+		<Default><slot /></Default>
+	)
+}
+{status && note && <p class="status-note">{note}</p>}

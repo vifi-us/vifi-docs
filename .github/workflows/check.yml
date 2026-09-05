@@ -1,0 +1,22 @@
+name: Check
+
+# Builds every pull request. The build fails on broken internal links
+# (starlight-links-validator) and on frontmatter that doesn't match the schema,
+# so a green check means the page will render and link correctly once merged.
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build

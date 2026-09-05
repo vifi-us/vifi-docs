@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" role="img" aria-labelledby="title desc">
+  <title id="title">ViFi — Framed Call favicon</title>
+  <desc id="desc">An electric-blue phone and ringing waves inside a white tile with a blue outline and a dark-blue offset shadow.</desc>
+  <rect x="4" y="4" width="27" height="27" rx="7" fill="#0041c4"/>
+  <rect x="1" y="1" width="27" height="27" rx="7" fill="#ffffff" stroke="#0055ff" stroke-width="2"/>
+  <g transform="translate(1.7 1.7) scale(0.8)" fill="none" stroke="#0055ff" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M7.5 5.5h4.3l2.1 5.2-3.1 2.3a17.8 17.8 0 0 0 8.2 8.2l2.3-3.1 5.2 2.1v4.3a2.5 2.5 0 0 1-2.5 2.5C13.5 27 5 18.5 5 8a2.5 2.5 0 0 1 2.5-2.5Z" stroke-width="2.8"/>
+    <path d="M20 5q7 1 7 8M20.5 9q3.1.7 3.5 4" stroke-width="2.1"/>
+  </g>
+</svg>

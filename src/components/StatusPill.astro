@@ -1,0 +1,13 @@
+---
+interface Props {
+	status: 'beta' | 'coming-soon';
+}
+const { status } = Astro.props;
+const label = status === 'beta' ? 'Beta' : 'Coming soon';
+const title =
+	status === 'beta'
+		? 'Usable today, still being refined. Expect rough edges.'
+		: 'Not available yet. Documented so you know what is planned.';
+---
+
+<span class={`status-pill status-pill--${status}`} title={title}>{label}</span>

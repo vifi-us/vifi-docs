@@ -1,0 +1,37 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro';
+
+const page = Astro.url.pathname;
+---
+
+<div class="vifi-feedback" data-feedback data-page={page}>
+	<span class="vifi-feedback__q">Was this page helpful?</span>
+	<button type="button" data-vote="yes">Yes</button>
+	<button type="button" data-vote="no">Not really</button>
+	<span class="vifi-feedback__thanks">
+		Thanks. Want to tell us more?
+		<a href="mailto:support@vifi.us?subject=Help%20Center%20feedback">Email support@vifi.us</a>.
+	</span>
+</div>
+
+<Default><slot /></Default>
+
+<script>
+	type PostHogLike = { capture: (event: string, props?: Record<string, unknown>) => void };
+
+	for (const box of document.querySelectorAll<HTMLElement>('[data-feedback]')) {
+		for (const button of box.querySelectorAll<HTMLButtonElement>('button[data-vote]')) {
+			button.addEventListener('click', () => {
+				const helpful = button.dataset.vote === 'yes';
+				const page = box.dataset.page ?? location.pathname;
+				try {
+					const ph = (window as unknown as { posthog?: PostHogLike }).posthog;
+					ph?.capture('docs_feedback', { page, helpful });
+				} catch {
+					/* analytics is optional */
+				}
+				box.setAttribute('data-done', '');
+			});
+		}
+	}
+</script>
