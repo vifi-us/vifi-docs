@@ -1,0 +1,70 @@
+{
+  "version": "2026-09-06",
+  "note": "Load into the Menu feature so the agent quotes exact plan prices via lookup_menu. Prices in dollars.",
+  "items": [
+    {
+      "category": "Plans",
+      "name": "Starter plan",
+      "price": 49.0,
+      "description": "Monthly. 100 AI minutes and 100 text segments included, then 15 cents per extra minute and 3 cents per extra text segment. Everything in ViFi included.",
+      "is_available": true,
+      "sort_order": 1
+    },
+    {
+      "category": "Plans",
+      "name": "Growth plan",
+      "price": 149.0,
+      "description": "Monthly, most popular. 500 AI minutes and 500 text segments included, then 12 cents per extra minute and 3 cents per extra text segment. Everything in ViFi included.",
+      "is_available": true,
+      "sort_order": 2
+    },
+    {
+      "category": "Plans",
+      "name": "Business plan",
+      "price": 349.0,
+      "description": "Monthly. 2,000 AI minutes and 2,000 text segments included, then 10 cents per extra minute and 2 cents per extra text segment. Everything in ViFi included, lowest overage rates.",
+      "is_available": true,
+      "sort_order": 3
+    },
+    {
+      "category": "Trial",
+      "name": "Free trial",
+      "price": 0.0,
+      "description": "Seven days, no credit card. 25 AI minutes and 50 text segments. Up to three approved phone numbers can call the agent during the trial; transfers to a person switch on when you subscribe.",
+      "is_available": true,
+      "sort_order": 4
+    },
+    {
+      "category": "Included in every plan",
+      "name": "Call summaries, action items, transcripts and recordings",
+      "price": null,
+      "description": "Delivered within a minute or two of each call by email, text, Slack, Discord or HubSpot.",
+      "is_available": true,
+      "sort_order": 5
+    },
+    {
+      "category": "Included in every plan",
+      "name": "Knowledge base, menu and business hours",
+      "price": null,
+      "description": "Articles, documents and web pages the agent answers from, a menu with prices, and hours for open-or-closed questions.",
+      "is_available": true,
+      "sort_order": 6
+    },
+    {
+      "category": "Included in every plan",
+      "name": "Integrations",
+      "price": null,
+      "description": "HubSpot, Google Calendar, Calendly, Square, Slack, Discord, Gmail and custom webhooks.",
+      "is_available": true,
+      "sort_order": 7
+    },
+    {
+      "category": "Included in every plan",
+      "name": "Website widget and team access",
+      "price": null,
+      "description": "A voice widget for your website and unlimited teammates with Admin, Member and Viewer roles.",
+      "is_available": true,
+      "sort_order": 8
+    }
+  ]
+}
