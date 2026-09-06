@@ -566,6 +566,36 @@
       "category": "Troubleshooting",
       "question": "Callers say the audio is choppy. Why?",
       "answer": "Almost always the caller's connection, such as a weak mobile signal. If real conversations consistently show no transcript, forwarding may be connecting and dropping, and your carrier can check the forwarding target."
+    },
+    {
+      "category": "Support",
+      "question": "My ViFi line isn't answering calls. What do I do?",
+      "answer": "That counts as an emergency for us. Tell me your workspace name and I'll connect you to the ViFi on-call team right now, at any hour. If the transfer doesn't go through, I'll take an urgent message with a callback number."
+    },
+    {
+      "category": "Support",
+      "question": "What counts as an emergency for ViFi support?",
+      "answer": "An emergency is a current customer whose line isn't answering, whose calls are failing, or whose callers can't get through right now. Those go straight to the on-call team at any hour. Setup questions and billing issues are handled during business hours."
+    },
+    {
+      "category": "Support",
+      "question": "Is there after-hours support?",
+      "answer": "Yes for outages: if your ViFi line is down, I'll connect you to the on-call team at any hour. For everything else, I can take a message and the team replies within one business day."
+    },
+    {
+      "category": "Support",
+      "question": "How do I reach ViFi sales?",
+      "answer": "During business hours I can transfer you to ViFi sales right now. Outside those hours, leave your name, number, business, and email, and sales will call you back within one business day."
+    },
+    {
+      "category": "Support",
+      "question": "Can you send me the help center link?",
+      "answer": "Yes. The help center is at docs dot vifi dot us, and I can text the link to this number if you'd like."
+    },
+    {
+      "category": "Troubleshooting",
+      "question": "Calls to my business are ringing but nobody answers. Is ViFi down?",
+      "answer": "Usually that means call forwarding to your ViFi number was turned off on your phone or carrier, not that ViFi is down. Check forwarding first. If forwarding is on and calls still fail, tell me and I'll connect you to the on-call team."
     }
   ]
 }

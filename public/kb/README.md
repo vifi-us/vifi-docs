@@ -11,7 +11,7 @@ Everything here is written for speech: short, self-contained, plain, no menus or
 | `articles.json` | Knowledge Base → Articles | 113 question-and-answer entries. The primary source: the agent gets the top five matches and answers in one or two sentences, so each answer is one to three spoken sentences. |
 | `*.md` (nine documents) | Knowledge Base → Documents | Depth behind the articles. Each `##` section is self-contained and under ~1,300 characters because documents are embedded in ~1,500-character chunks. Keep the filename descriptive; it is prefixed to every chunk when embedding. |
 | `menu.json` | Menu | The plan catalog with exact prices, so "how much is Growth?" is answered by the menu lookup, not a paraphrase. |
-| `urls.txt` | Knowledge Base → URLs | Help-center pages to add as self-refreshing sources for depth. Add after the curated content. |
+| `urls.txt` | Knowledge Base → URLs | Help-center pages to add as self-refreshing sources for depth. Add after the curated content. With vifi-platform#828 each page also gets articles written from it automatically, so a page whose answers are already in `articles.json` will not produce duplicates (the extractor skips questions that are already answered). |
 | `PLAYBOOK.md` | Agent, Settings, Automations | The workspace configuration and the showcase plan. |
 
 ## Loading it
