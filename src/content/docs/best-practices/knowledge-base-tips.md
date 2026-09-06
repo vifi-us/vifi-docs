@@ -23,7 +23,7 @@ If the honest answer is "it depends", say what it depends on and what the agent 
 
 ## Documents are for depth
 
-Upload the price list, the FAQ page, the warranty terms. Let the agent search them for the details you'd never write articles for. Keep them current: remove and re-upload when they change.
+Upload the price list, the FAQ page, the warranty terms. ViFi writes articles from them and still searches the full text for the details you'd never write articles for. Keep documents current by uploading the new version and deleting the old one; web pages keep themselves current, so prefer adding a page over uploading a copy of it.
 
 ## Check what the agent found
 
