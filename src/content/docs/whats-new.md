@@ -8,6 +8,12 @@ Customer-visible changes, newest first. For what's planned, see [What's coming](
 
 ## September 2026
 
+**Build your knowledge base from the files you already have** (6 September)
+
+- **More file types.** Upload Word, PowerPoint, Excel, CSV, RTF, and JSON files as well as PDF, text, Markdown, and HTML. Long documents are read in full instead of the first dozen pages.
+- **ViFi writes the articles.** After a document or web page is indexed, ViFi reads it and writes the questions and answers a caller might ask, tagged with where they came from. Edit one to keep your own version. See [Knowledge base](/your-agent/knowledge-base/).
+- **Pages stay current.** Web pages are re-checked automatically and their answers rewritten when the page changes. Each workspace can add up to 50 pages and 200 documents.
+
 **Caller safety and setup polish** (5 September)
 
 - **Blocked callers.** Block numbers by hand, or let ViFi block likely spam and rapid repeat callers automatically. Blocked calls are rejected before they're answered and don't use minutes. See [Blocked callers](/calls-and-callers/blocked-callers/).
