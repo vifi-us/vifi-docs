@@ -47,10 +47,17 @@ import Default from '@astrojs/starlight/components/Head.astro';
     var captureAppClick = function (event) {
       if (event.type === "auxclick" && event.button !== 1) return;
       var target = event.target instanceof Element ? event.target : null;
-      var anchor = target && target.closest('a[href^="https://app.vifi.us"]');
+      var anchor = target && target.closest('a[href]');
       if (!anchor || !window.posthog) return;
-      var destination = new URL(anchor.getAttribute("href"), location.href);
-      var eventName = destination.pathname.indexOf("/register") === 0
+      var destination;
+      try {
+        destination = new URL(anchor.getAttribute("href"), location.href);
+      } catch {
+        return;
+      }
+      if (destination.origin !== "https://app.vifi.us") return;
+      var path = destination.pathname.replace(/\/$/, "");
+      var eventName = path === "/register"
         ? "marketing_cta_clicked"
         : "docs_app_link_clicked";
       window.posthog.capture(
