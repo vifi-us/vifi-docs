@@ -105,13 +105,19 @@ The audience is a business owner with no technical background, reading on a phon
 ## Running locally
 
 ```bash
-npm install
+npm ci
 npm run dev       # http://localhost:4321
+npm run check     # Astro and TypeScript diagnostics
+npm test          # analytics and screenshot regression checks
 npm run build     # full build with link validation
 npm run preview   # serve the build
 ```
 
-Node 22 or newer.
+Use Node 26.8.1, matching `.node-version` and CI. Astro supports Node 22.12 or newer.
+
+Astro's checker needs the TypeScript JavaScript API, so its `typescript` dependency
+uses Microsoft's maintained `@typescript/typescript6` compatibility package.
+The native TypeScript 7 compiler does not provide that API.
 
 ## How it's built
 
