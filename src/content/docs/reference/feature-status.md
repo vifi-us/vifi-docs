@@ -18,7 +18,7 @@ Pages in this help center carry a pill when a feature is <span class="status-pil
 | Message taking | Available | [Call behavior](/your-agent/call-behavior/) |
 | Transfers to a person, ordered destinations | Available after trial | [Transfers](/your-agent/transfers/) |
 | Policies and guardrails | Available | [Call behavior](/your-agent/call-behavior/) |
-| Allow interruptions switch | Beta | [Call behavior](/your-agent/call-behavior/) |
+| Allow interruptions switch | Available | [Call behavior](/your-agent/call-behavior/) |
 | Ten languages and switching to the caller's language | Available | [Voice and language](/your-agent/voice-and-language/) |
 | Pronunciation guide | Available | [Pronunciation](/your-agent/pronunciation/) |
 | Call recording, retention, disclaimer | Available | [Recording](/your-agent/recording-and-compliance/) |
