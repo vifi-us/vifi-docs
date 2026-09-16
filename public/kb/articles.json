@@ -1,0 +1,601 @@
+{
+  "version": "2026-09-06",
+  "source": "docs.vifi.us and vifi.us, curated for spoken answers",
+  "articles": [
+    {
+      "category": "About ViFi",
+      "question": "What is ViFi?",
+      "answer": "ViFi is an AI phone assistant for small businesses. It answers your calls in a natural voice, helps the caller the way a good front-desk person would, and sends you a written recap of every conversation with a summary, action items, the full transcript, and a recording if you turn recording on."
+    },
+    {
+      "category": "About ViFi",
+      "question": "What does ViFi actually do on a call?",
+      "answer": "It answers with your greeting, talks with the caller, answers questions from the information you gave it, takes messages, can transfer the call to a real person, and can book appointments if you connect a calendar. When the call ends, you get the whole story within a minute or two."
+    },
+    {
+      "category": "About ViFi",
+      "question": "Who is ViFi for?",
+      "answer": "Small businesses whose phone drives revenue: contractors, HVAC and plumbing companies, electricians, medical and dental offices, law firms, real estate agents, salons, restaurants, and anyone who misses calls because they are busy doing the work."
+    },
+    {
+      "category": "About ViFi",
+      "question": "Am I talking to a real person right now?",
+      "answer": "No. You are talking to ViFi's own AI assistant, the same product ViFi sells. Everything you hear is generated live, and if you want a person, just ask and I can take a message or connect you."
+    },
+    {
+      "category": "About ViFi",
+      "question": "Is ViFi available now, or is it still coming?",
+      "answer": "ViFi is live today. You can start a free seven-day trial at vifi.us and have your agent answering calls within about ten minutes."
+    },
+    {
+      "category": "About ViFi",
+      "question": "How is ViFi different from other AI receptionists?",
+      "answer": "Most AI phone tools stop at answering. ViFi also tells you what happened: after every call you get a summary, action items, a word-for-word transcript, and optionally the recording, plus it remembers repeat callers and answers only from information you approved."
+    },
+    {
+      "category": "About ViFi",
+      "question": "Is ViFi an app I have to install?",
+      "answer": "No. There is nothing to install. You set it up in a web browser, forward your calls or use the number ViFi gives you, and manage everything from the ViFi dashboard."
+    },
+    {
+      "category": "About ViFi",
+      "question": "Can ViFi make outbound calls?",
+      "answer": "Not today. ViFi answers incoming calls and can transfer a live call to a person, but it does not place outbound calls on its own."
+    },
+    {
+      "category": "About ViFi",
+      "question": "Does ViFi work outside the United States?",
+      "answer": "ViFi provides US phone numbers and is built for US businesses today. Callers can reach it from anywhere, but texting and phone numbers are US-only for now."
+    },
+    {
+      "category": "About ViFi",
+      "question": "Where can I read more about ViFi?",
+      "answer": "The website is vifi.us, and the help center with step-by-step guides is at docs.vifi.us."
+    },
+    {
+      "category": "How it works",
+      "question": "What happens when someone calls my business with ViFi?",
+      "answer": "The call reaches your ViFi number, either directly or because your phone forwarded it. Your agent answers with your greeting, helps the caller, and wraps up. Within a minute or two you get a summary, action items, and the transcript by email, text, Slack, or wherever you asked."
+    },
+    {
+      "category": "How it works",
+      "question": "Do I need a new phone number to use ViFi?",
+      "answer": "No. You keep your existing business number and forward calls to your ViFi number. Callers dial the same number they always have. You can also give out the ViFi number directly if you prefer."
+    },
+    {
+      "category": "How it works",
+      "question": "Can I keep my existing phone number?",
+      "answer": "Yes. ViFi never moves your number. Your carrier keeps it, and you forward calls to ViFi under your own control. If you ever stop using ViFi, you turn forwarding off and everything is as it was."
+    },
+    {
+      "category": "How it works",
+      "question": "How does call forwarding to ViFi work?",
+      "answer": "You dial a short code on the phone whose calls you want forwarded, or change a setting in your phone system. You can forward everything, or only calls you do not answer and calls that arrive while you are busy. The help center lists the codes for AT&T, Verizon, T-Mobile, and most landlines."
+    },
+    {
+      "category": "How it works",
+      "question": "Can ViFi answer only when I don't pick up?",
+      "answer": "Yes. That is the most common setup. Your phone rings first, and ViFi only answers if you miss the call or the line is busy. Many businesses forward everything at night and only overflow during the day."
+    },
+    {
+      "category": "How it works",
+      "question": "What does the caller hear?",
+      "answer": "A natural, professional voice with the greeting you wrote. There is no phone tree and no hold music. The caller just talks, and the agent talks back."
+    },
+    {
+      "category": "How it works",
+      "question": "Can ViFi take a message?",
+      "answer": "Yes. It collects the caller's name, callback number, and what they need, and the message appears in your call briefing and notifications."
+    },
+    {
+      "category": "How it works",
+      "question": "Can ViFi transfer a call to a real person?",
+      "answer": "Yes. On a paid plan you can set one or more transfer destinations in order, with a description of when to use each, and choose whether the agent announces the caller first or transfers straight through. During the free trial, transfers are off and the agent takes a message instead."
+    },
+    {
+      "category": "How it works",
+      "question": "What do I get after each call?",
+      "answer": "A short summary, the caller's intent, action items for your team, the full transcript, and the recording if recording is on. It arrives within a minute or two of the call ending."
+    },
+    {
+      "category": "How it works",
+      "question": "How quickly do I get the recap after a call?",
+      "answer": "Usually within one to two minutes of the call ending."
+    },
+    {
+      "category": "How it works",
+      "question": "Can ViFi speak other languages?",
+      "answer": "Yes. Your agent speaks English by default and can be set to Dutch, French, German, Hindi, Italian, Japanese, Portuguese, Russian, or Spanish. You can also let it switch to the caller's language mid-call when someone speaks one of those languages."
+    },
+    {
+      "category": "How it works",
+      "question": "Does ViFi recognize repeat callers?",
+      "answer": "Yes. ViFi keeps a profile for every phone number that calls you, with what they asked for before and facts they mentioned, so returning callers are recognized and the agent uses what it already knows."
+    },
+    {
+      "category": "How it works",
+      "question": "Can ViFi book appointments?",
+      "answer": "Yes, if you connect Google Calendar, Calendly, or Square Appointments. The agent checks availability, offers times, confirms the caller's details, and books while the caller is on the line."
+    },
+    {
+      "category": "How it works",
+      "question": "What happens if ViFi can't answer a question?",
+      "answer": "It says so honestly and offers to take a message or connect the caller to a person. It never makes up prices, hours, or policies. Every unanswered question is listed in your dashboard so you can add the answer."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "How much does ViFi cost?",
+      "answer": "There are three monthly plans. Starter is $49 a month with 100 AI minutes, Growth is $149 a month with 500 AI minutes, and Business is $349 a month with 2,000 AI minutes. Every plan includes the full product and starts with a free seven-day trial. Current prices are always on vifi.us slash pricing."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "What is included in the Starter plan?",
+      "answer": "Starter is $49 a month and includes 100 AI minutes and 100 text segments, plus everything ViFi does: summaries and transcripts, recordings, caller memory, the knowledge base, integrations, the website widget, and team access. Extra minutes are 15 cents each."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "What is included in the Growth plan?",
+      "answer": "Growth is $149 a month and includes 500 AI minutes and 500 text segments, with everything in the product. Extra minutes are 12 cents each. It is the most popular plan."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "What is included in the Business plan?",
+      "answer": "Business is $349 a month and includes 2,000 AI minutes and 2,000 text segments, with everything in the product and the lowest overage rates: 10 cents per extra minute and 2 cents per extra text segment."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "What is an AI minute?",
+      "answer": "An AI minute is one minute of your agent's time on a call, rounded up to the next whole minute per call. A call lasting two minutes and ten seconds counts as three AI minutes. Time after a transfer, when the caller is talking to your team, does not count."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "What happens if I use all my included minutes?",
+      "answer": "By default ViFi keeps answering, and extra minutes are billed at your plan's rate: 15 cents on Starter, 12 cents on Growth, and 10 cents on Business. You can set a spending alert or a hard stop limit in the dashboard so extra usage never surprises you."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "What is a text segment?",
+      "answer": "Carriers split text messages into segments of about 160 characters. A long text is two or three segments. Segments sent and received on your ViFi number both count toward your plan's included segments."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "Is there a contract or commitment?",
+      "answer": "No. Plans are month to month with no long-term contract and no cancellation fee."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "Can I cancel ViFi anytime?",
+      "answer": "Yes. You can cancel from your dashboard whenever you want, and your service continues until the end of the period you already paid for."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "Can I change plans later?",
+      "answer": "Yes. You can upgrade anytime from the dashboard and the difference is prorated. To move to a smaller plan, email support at support@vifi.us and it takes effect at the end of your billing period."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "Is there a free trial?",
+      "answer": "Yes. Every plan starts with a seven-day free trial with no credit card required. The trial includes 25 AI minutes and 50 text segments, and up to three approved phone numbers can call your agent while you test."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "Do I need a credit card to start?",
+      "answer": "No. The free trial needs no card. You add a card only when you subscribe, and if you subscribe during the trial, your card is not charged until the trial ends."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "How do I pay for ViFi?",
+      "answer": "By card, through a secure Stripe checkout. The monthly fee is charged at the start of each period, and any extra usage is charged at the end of the period it happened in. Invoices are available in the dashboard as PDFs."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "Do you accept promo codes?",
+      "answer": "Yes. The checkout page has a field for a promotion code. Enter it before you pay."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "Do missed calls or spam calls use my minutes?",
+      "answer": "Minutes only count while the agent is actually on the line. Calls that hang up before a conversation use almost nothing, and numbers you block are rejected before the agent answers, so they use no minutes at all."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "Is there a discount for paying yearly?",
+      "answer": "Not currently. Plans are monthly. If you are considering a larger rollout, email hello@vifi.us and we will talk."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "Do you have an enterprise or custom plan?",
+      "answer": "Not yet as a listed plan. If you need more than the Business plan, email hello@vifi.us and we will work something out."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "Are there any setup fees?",
+      "answer": "No. There are no setup fees and nothing to install."
+    },
+    {
+      "category": "Pricing and plans",
+      "question": "How much does an extra phone number cost?",
+      "answer": "Additional numbers can be added from the dashboard and may carry a small monthly charge. Email support@vifi.us for the current rate."
+    },
+    {
+      "category": "Getting started",
+      "question": "How long does it take to set up ViFi?",
+      "answer": "About ten minutes. A guided setup finds your business, gives you a local number, drafts your agent from your website and Google listing, and ends with you calling your own agent from your phone."
+    },
+    {
+      "category": "Getting started",
+      "question": "Do I need technical knowledge to use ViFi?",
+      "answer": "No. If you can set up call forwarding on your phone, and we walk you through it, you can use ViFi. There is nothing to install or maintain."
+    },
+    {
+      "category": "Getting started",
+      "question": "What are the setup steps?",
+      "answer": "Four steps: find your business so ViFi can learn from your website and Google listing, pick a local phone number, review what your agent learned and choose its name, voice, and greeting, then call your agent from your phone to hear it answer."
+    },
+    {
+      "category": "Getting started",
+      "question": "What do I need before I start?",
+      "answer": "An email address, about ten minutes, and your own mobile phone so you can call your agent and hear it answer. A business number you can forward helps, but you can also hand out the ViFi number directly."
+    },
+    {
+      "category": "Getting started",
+      "question": "Can I test ViFi before going live?",
+      "answer": "Yes. During the trial only phones you approve, up to three, can reach your agent, so you can test as much as you like before forwarding real customers. You can also call your agent from your web browser in the dashboard."
+    },
+    {
+      "category": "Getting started",
+      "question": "What are approved callers during the trial?",
+      "answer": "During the free trial your ViFi number only answers up to three phone numbers you approve. Your own mobile is approved automatically. After you subscribe, every caller gets through."
+    },
+    {
+      "category": "Getting started",
+      "question": "How do I sign up?",
+      "answer": "Go to app.vifi.us slash register, enter your email and a password or sign in with Google, verify your email, and give your business name. The setup guide starts right away."
+    },
+    {
+      "category": "Getting started",
+      "question": "Can ViFi learn about my business automatically?",
+      "answer": "Yes. During setup, ViFi reads your website and Google Business listing to draft your business description, services, and hours. You review and edit everything before the agent answers a call."
+    },
+    {
+      "category": "Features",
+      "question": "What is the knowledge base?",
+      "answer": "It is where your agent's answers come from. You add short question-and-answer articles, upload documents like price lists and FAQs, or point it at pages on your website. The agent searches it during calls, and a list of unanswered questions shows you what to add next."
+    },
+    {
+      "category": "Features",
+      "question": "Can ViFi answer questions about my prices?",
+      "answer": "Yes. Put prices in the knowledge base or in the menu feature, and the agent quotes them exactly. If you would rather it never quote prices, one policy line turns that off."
+    },
+    {
+      "category": "Features",
+      "question": "Can ViFi tell callers my business hours?",
+      "answer": "Yes. Set your hours once and the agent answers questions like whether you are open on Saturday and what time you close."
+    },
+    {
+      "category": "Features",
+      "question": "Can I control what ViFi says and does?",
+      "answer": "Yes. Policies are plain-English rules the agent follows on every call, such as never quoting prices or always offering to transfer refund requests. You also choose which capabilities are on, such as taking messages or transferring."
+    },
+    {
+      "category": "Features",
+      "question": "Can I customize the greeting?",
+      "answer": "Yes. You write the opening line, and it can automatically include your business name, the agent's name, and a recording notice. You also write the fallback line for when the agent cannot help."
+    },
+    {
+      "category": "Features",
+      "question": "Can I choose the voice?",
+      "answer": "Yes. There is a catalog of natural voices with a recommended set to start from, and you can preview each one before choosing."
+    },
+    {
+      "category": "Features",
+      "question": "Does ViFi record calls?",
+      "answer": "Recording is available and on by default for new accounts. Recordings are stored privately, deleted after a retention period you choose, and the agent can read a recording notice at the start of each call."
+    },
+    {
+      "category": "Features",
+      "question": "Do I get transcripts?",
+      "answer": "Yes. Every call has a word-for-word transcript alongside the summary and action items."
+    },
+    {
+      "category": "Features",
+      "question": "What are action items?",
+      "answer": "Things your team needs to do after a call, pulled out of the conversation automatically, such as calling someone back about a quote. They appear on the call and on the caller's profile."
+    },
+    {
+      "category": "Features",
+      "question": "Can ViFi block spam callers?",
+      "answer": "Yes. You can block numbers by hand, and you can let ViFi block likely spam and rapid repeat callers automatically. Blocked calls are rejected before the agent answers and use no minutes."
+    },
+    {
+      "category": "Features",
+      "question": "How do I get notified about calls?",
+      "answer": "By email or text after every call, or as a daily summary. You can also post summaries to Slack or Discord and log calls in HubSpot."
+    },
+    {
+      "category": "Features",
+      "question": "Does ViFi have analytics?",
+      "answer": "Yes. The analytics page shows call volume, answered versus missed, how callers felt, and what they called about. It is still in beta, so a few measures are being added."
+    },
+    {
+      "category": "Features",
+      "question": "Can ViFi answer questions on my website?",
+      "answer": "Yes. A website widget lets visitors talk to the same agent from their browser, trained on the same knowledge. You add it with one line of code, and conversations show up in your call history."
+    },
+    {
+      "category": "Features",
+      "question": "Can my team use ViFi too?",
+      "answer": "Yes. Invite teammates as Admins, Members, or Viewers. Admins manage billing and settings, Members keep the knowledge base current and read calls, and Viewers can only read. Every change is recorded in an audit log."
+    },
+    {
+      "category": "Features",
+      "question": "Can ViFi handle a menu or a list of services?",
+      "answer": "Yes. The menu feature holds items with prices and availability, and the agent looks them up to answer questions like how much something costs or whether it is available."
+    },
+    {
+      "category": "Features",
+      "question": "What is caller memory?",
+      "answer": "A profile for every phone number that calls you, built automatically: past requests, facts they mentioned, notes you add, and how their calls have felt over time. The agent uses it to recognize returning callers."
+    },
+    {
+      "category": "Features",
+      "question": "Can I add my own instructions to the agent?",
+      "answer": "Yes. Under Personality you can add custom instructions, up to about two thousand characters, that refine how the agent talks and behaves. They cannot override ViFi's built-in safety rules."
+    },
+    {
+      "category": "Integrations",
+      "question": "Which integrations does ViFi support?",
+      "answer": "HubSpot, Google Calendar, Calendly, Square Appointments, Slack, Discord, and Gmail, plus custom webhooks for Zapier, Make, n8n, or your own system. You connect a tool once, then choose what ViFi does with it before, during, or after calls."
+    },
+    {
+      "category": "Integrations",
+      "question": "Does ViFi work with HubSpot?",
+      "answer": "Yes. ViFi can look up the caller in HubSpot while the phone is still ringing so the agent greets them by name, and after the call it can create or update the contact, log the call, and add the summary and action items as notes and tasks."
+    },
+    {
+      "category": "Integrations",
+      "question": "Does ViFi work with Google Calendar?",
+      "answer": "Yes. With Google Calendar connected, the agent can check availability, book, look up, change, and cancel appointments while the caller is on the line."
+    },
+    {
+      "category": "Integrations",
+      "question": "Does ViFi work with Calendly?",
+      "answer": "Yes. The agent can check open slots on a Calendly event type and book an appointment, and Calendly sends its usual confirmation."
+    },
+    {
+      "category": "Integrations",
+      "question": "Does ViFi work with Square?",
+      "answer": "Yes. With Square Appointments connected, the agent can check availability and book, change, or cancel bookings."
+    },
+    {
+      "category": "Integrations",
+      "question": "Does ViFi work with Slack?",
+      "answer": "Yes. ViFi can post a summary card after every call, alert a channel when a call goes unanswered, and ping your team during a call when a caller needs a person."
+    },
+    {
+      "category": "Integrations",
+      "question": "Does ViFi work with Discord?",
+      "answer": "Yes. You can connect a Discord app or a simple channel webhook to get call summaries, missed-call alerts, and mid-call pings. The Discord connection is newer, so it is marked as beta."
+    },
+    {
+      "category": "Integrations",
+      "question": "Does ViFi work with Gmail?",
+      "answer": "Yes. ViFi can email call summaries to your team from your own Gmail address and send a short follow-up email to callers who gave their email on the call."
+    },
+    {
+      "category": "Integrations",
+      "question": "Can I connect ViFi to Zapier or my own software?",
+      "answer": "Yes, through custom webhooks. ViFi can send call data to a web address you choose the moment a call ends, when the summary is ready, or when a call is missed, which works with Zapier, Make, n8n, or your own system."
+    },
+    {
+      "category": "Integrations",
+      "question": "Can ViFi connect to a system that isn't on the list?",
+      "answer": "Not directly yet. Connecting your own systems through MCP servers is designed and scheduled. For now, custom webhooks push call data out after each call. Email support@vifi.us with what you need and we will let you know when it is available."
+    },
+    {
+      "category": "Integrations",
+      "question": "Does ViFi integrate with QuickBooks, Salesforce, or Zoho?",
+      "answer": "Not today. HubSpot is the supported CRM, and custom webhooks can send call data to other systems through tools like Zapier. Email support@vifi.us if you need a specific integration."
+    },
+    {
+      "category": "Industries",
+      "question": "How does ViFi help home service businesses like contractors?",
+      "answer": "When you are on a job or on a roof, ViFi answers, captures who called, where they are, what they need, and when, and sends you a briefing so you can call back ready to book instead of guessing what the voicemail meant."
+    },
+    {
+      "category": "Industries",
+      "question": "How does ViFi help an HVAC company?",
+      "answer": "During peak season ViFi picks up the overflow and after-hours calls, collects the property, system, symptoms, and timing without trying to diagnose anything, and briefs your dispatcher or technician so the right person calls back with context."
+    },
+    {
+      "category": "Industries",
+      "question": "How does ViFi help a plumbing company?",
+      "answer": "ViFi talks with callers while your plumbers are driving or under a sink, records whether it is an active leak or a future project, the address, and the timing, and sends a briefing so urgent jobs get prioritized."
+    },
+    {
+      "category": "Industries",
+      "question": "How does ViFi help electricians?",
+      "answer": "ViFi answers when your electricians are at a panel or on a ladder, collects the location, symptoms, and project details within the safety wording you approve, and flags anything that needs a person right away."
+    },
+    {
+      "category": "Industries",
+      "question": "How does ViFi help a medical or dental office?",
+      "answer": "ViFi handles overflow and after-hours calls when the front desk is busy, captures what the patient needs and their callback details, and gives your staff a reliable record of the conversation. It does not give medical advice."
+    },
+    {
+      "category": "Industries",
+      "question": "How does ViFi help a law firm?",
+      "answer": "Most prospective clients will not leave a voicemail. ViFi answers every intake call with a professional voice, captures the caller's situation and contact details, and delivers a transcript so attorneys can decide which calls to return first."
+    },
+    {
+      "category": "Industries",
+      "question": "How does ViFi help real estate agents?",
+      "answer": "When you are at a showing or an open house, ViFi answers, talks with the prospect, and sends you an instant heads-up with what they want, so you respond first and win the client."
+    },
+    {
+      "category": "Industries",
+      "question": "Does ViFi work for restaurants, salons, or shops?",
+      "answer": "Yes. Any business that gets calls about hours, prices, availability, or booking is a fit. The menu feature holds your items and prices, business hours answer the most common question, and a connected calendar lets the agent book."
+    },
+    {
+      "category": "Texting",
+      "question": "Can ViFi text my callers?",
+      "answer": "In a limited way for now. On a call, if a caller asks for something in writing, the agent can offer a one-time text, read a short notice, and send one fixed confirmation message if the caller clearly agrees. Free-form texts and links are not available yet."
+    },
+    {
+      "category": "Texting",
+      "question": "Can ViFi send links or custom text messages?",
+      "answer": "Not yet. US carriers require every business text program to be registered and approved, and ViFi's current program covers only a fixed one-time confirmation. A richer program with links and ongoing conversations is in progress."
+    },
+    {
+      "category": "Texting",
+      "question": "Can I reply to texts from the dashboard?",
+      "answer": "Not yet. You can read every text sent to your ViFi number in the Messages page, but replying from the dashboard is coming soon."
+    },
+    {
+      "category": "Texting",
+      "question": "Why are text messages limited?",
+      "answer": "Because US carriers require any business that texts from a regular ten-digit number to be registered with an approved description of what it sends. ViFi is registered as one program for every customer, which keeps you out of the paperwork but means every message has to fit what is approved."
+    },
+    {
+      "category": "Texting",
+      "question": "Will ViFi text me summaries after calls?",
+      "answer": "Yes. Texts to you, the business owner, are a separate system and work normally. Turn on text summaries in Notifications and you get a short recap after each call."
+    },
+    {
+      "category": "Security and privacy",
+      "question": "Is my data secure with ViFi?",
+      "answer": "Yes. Data is encrypted in transit and at rest, your account supports two-factor authentication with sign-in alerts, and access inside your team is controlled by roles. Every playback of a recording is logged."
+    },
+    {
+      "category": "Security and privacy",
+      "question": "Who can listen to my call recordings?",
+      "answer": "Only people on your team whose role includes recording access, and every playback, download, and deletion is logged in your audit log. ViFi staff only access data when needed to support you."
+    },
+    {
+      "category": "Security and privacy",
+      "question": "How long are recordings kept?",
+      "answer": "As long as you choose. The default is 90 days, after which recordings are deleted automatically. Transcripts and summaries stay with the call."
+    },
+    {
+      "category": "Security and privacy",
+      "question": "Is ViFi HIPAA compliant?",
+      "answer": "ViFi is not currently offered as a HIPAA-covered service with a business associate agreement. Medical offices use ViFi for scheduling and callback intake, and the agent never gives medical advice. If you need a business associate agreement, email hello@vifi.us to discuss."
+    },
+    {
+      "category": "Security and privacy",
+      "question": "Do I need consent to record calls?",
+      "answer": "Some US states require every party on a call to consent. The usual way to handle it is a notice at the start of the call, which ViFi can read automatically. We cannot give legal advice, so check your state's rule or ask a lawyer."
+    },
+    {
+      "category": "Security and privacy",
+      "question": "Can I delete a caller's data?",
+      "answer": "Yes. You can delete a recording from the call page, edit or remove facts on a caller's profile, and email support@vifi.us to delete a caller's data or an entire workspace."
+    },
+    {
+      "category": "Security and privacy",
+      "question": "Where is my data stored?",
+      "answer": "On cloud infrastructure in the United States. Calls are processed by speech and language providers under contract to ViFi, as described in the privacy policy at vifi.us."
+    },
+    {
+      "category": "Security and privacy",
+      "question": "Does ViFi support two-factor authentication?",
+      "answer": "Yes. You can use an authenticator app, text message codes, or email codes, with backup codes in case you lose your phone. Sign-in alerts for new devices are always on."
+    },
+    {
+      "category": "Security and privacy",
+      "question": "Does ViFi sell my data or my callers' data?",
+      "answer": "No. Your calls and caller information are used to run your service, not sold. Connected tools only receive what the automations you enabled send them."
+    },
+    {
+      "category": "Support",
+      "question": "How do I get help with ViFi?",
+      "answer": "Email support@vifi.us. A person reads every message and most replies go out within one business day. The help center at docs.vifi.us has step-by-step guides for everything in the product."
+    },
+    {
+      "category": "Support",
+      "question": "Is there a help center or documentation?",
+      "answer": "Yes, at docs.vifi.us. It covers setup, every feature, troubleshooting, and best practices, in plain English."
+    },
+    {
+      "category": "Support",
+      "question": "How do I talk to a person at ViFi?",
+      "answer": "Ask me and I can take a message or connect you if someone is available. You can also email hello@vifi.us for sales questions or support@vifi.us for help with your account."
+    },
+    {
+      "category": "Support",
+      "question": "How do I report a problem?",
+      "answer": "Email support@vifi.us with your workspace name, a link to the call if it is about a call, what you expected, and what happened. A screenshot helps."
+    },
+    {
+      "category": "Support",
+      "question": "How do I request a feature?",
+      "answer": "Email support@vifi.us with what you are trying to do. Requests from customers move things up the roadmap, and the help center has a page listing what is coming."
+    },
+    {
+      "category": "Support",
+      "question": "What is ViFi's support email?",
+      "answer": "support@vifi.us for help with your account, and hello@vifi.us for questions before you sign up."
+    },
+    {
+      "category": "Troubleshooting",
+      "question": "Why aren't calls reaching my ViFi agent?",
+      "answer": "During the trial only approved phone numbers get through, so check that first. Then call your ViFi number directly to confirm it answers, and if it does, the issue is call forwarding on your phone. The help center walks through each step."
+    },
+    {
+      "category": "Troubleshooting",
+      "question": "What if the agent says something wrong?",
+      "answer": "Fix the source. Wrong hours or services live in the business profile, wrong prices in the menu or knowledge base, and anything it should never say becomes a one-line policy. Changes take effect on the next call."
+    },
+    {
+      "category": "Troubleshooting",
+      "question": "What if I didn't get a briefing after a call?",
+      "answer": "Summaries usually take under two minutes. If the call shows no transcript, nobody spoke, which is common with hang-ups. If the summary exists but no email arrived, check the recipients under Notifications and your spam folder."
+    },
+    {
+      "category": "Troubleshooting",
+      "question": "What if an integration disconnected?",
+      "answer": "Open Integrations and click Reconnect on the service. Your automations resume without being set up again, and the Activity tab shows every attempt with its result."
+    },
+    {
+      "category": "Troubleshooting",
+      "question": "I can't sign in to ViFi. What should I do?",
+      "answer": "Use Forgot password on the sign-in page, or sign in with Google if that is how you signed up. If two-factor is the problem, use a backup code, or email support@vifi.us from the account's email address."
+    },
+    {
+      "category": "Troubleshooting",
+      "question": "Callers say the audio is choppy. Why?",
+      "answer": "Almost always the caller's connection, such as a weak mobile signal. If real conversations consistently show no transcript, forwarding may be connecting and dropping, and your carrier can check the forwarding target."
+    },
+    {
+      "category": "Support",
+      "question": "My ViFi line isn't answering calls. What do I do?",
+      "answer": "That counts as an emergency for us. Tell me your workspace name and I'll connect you to the ViFi on-call team right now, at any hour. If the transfer doesn't go through, I'll take an urgent message with a callback number."
+    },
+    {
+      "category": "Support",
+      "question": "What counts as an emergency for ViFi support?",
+      "answer": "An emergency is a current customer whose line isn't answering, whose calls are failing, or whose callers can't get through right now. Those go straight to the on-call team at any hour. Setup questions and billing issues are handled during business hours."
+    },
+    {
+      "category": "Support",
+      "question": "Is there after-hours support?",
+      "answer": "Yes for outages: if your ViFi line is down, I'll connect you to the on-call team at any hour. For everything else, I can take a message and the team replies within one business day."
+    },
+    {
+      "category": "Support",
+      "question": "How do I reach ViFi sales?",
+      "answer": "During business hours I can transfer you to ViFi sales right now. Outside those hours, leave your name, number, business, and email, and sales will call you back within one business day."
+    },
+    {
+      "category": "Support",
+      "question": "Can you send me the help center link?",
+      "answer": "Yes. The help center is at docs dot vifi dot us, and I can text the link to this number if you'd like."
+    },
+    {
+      "category": "Troubleshooting",
+      "question": "Calls to my business are ringing but nobody answers. Is ViFi down?",
+      "answer": "Usually that means call forwarding to your ViFi number was turned off on your phone or carrier, not that ViFi is down. Check forwarding first. If forwarding is on and calls still fail, tell me and I'll connect you to the on-call team."
+    }
+  ]
+}
