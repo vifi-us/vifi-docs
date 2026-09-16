@@ -13,7 +13,6 @@ This list is drawn from work that's scheduled, not from ideas. Dates aren't prom
 
 ## Your agent
 
-- **Interruptions that work reliably.** The Allow interruptions switch is being reworked so it does what it says.
 - **Better judgment about when to stop.** The agent staying on task when a caller still needs help, instead of taking a message and saying goodbye.
 
 ## Integrations

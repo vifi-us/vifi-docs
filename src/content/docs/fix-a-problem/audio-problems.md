@@ -15,7 +15,7 @@ Almost always the caller's connection: a weak mobile signal or a poor Wi-Fi call
 
 ## The agent talks over the caller, or won't let them interrupt
 
-Long greetings can't be interrupted easily. Shorten the greeting and fallback line. The **Allow interruptions** switch under [Call behavior](/your-agent/call-behavior/) is being reworked and may not change this yet.
+Check that **Allow interruptions** is on under [Call behavior](/your-agent/call-behavior/). With it on, callers can talk over the agent from the first word of the greeting; short acknowledgements don't stop it, and a stop caused by a noise resumes on its own after a moment. If callers still feel talked over, shorten the greeting and fallback line so there is less to talk over. If the agent stops too easily, the caller's line is probably noisy; the agent resumes when it hears nothing further, but a steady background noise can keep triggering it.
 
 ## The agent pauses for a long time before answering
 
