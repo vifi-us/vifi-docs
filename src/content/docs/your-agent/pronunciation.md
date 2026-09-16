@@ -12,9 +12,11 @@ Open **Agent** in the sidebar and find **Pronunciation**.
 ## Adding a word
 
 1. In **Word as written**, type the word exactly as it appears in your profile or knowledge base, for example `Daikin`.
-2. In the pronunciation box, spell it the way it sounds, for example `DYE-kin`. Capitalise the stressed syllable.
+2. In **Say it like**, spell it the way it sounds, for example `DYE-kin`. Capitalise the stressed syllable.
 3. Press the play button to hear it.
 4. Adjust until it sounds right, then save.
+
+The agent matches the word wherever it appears in what it is about to say, including inside names and web addresses, and speaks your version instead. Matching ignores capitals, so `ViFi`, `Vifi` and `VIFI` are all covered by one entry.
 
 ::screenshot[The pronunciation guide with two entries and the play button next to each]
 
@@ -24,6 +26,17 @@ Open **Agent** in the sidebar and find **Pronunciation**.
 - Staff names callers will ask for, such as `Dr. Nguyen`.
 - Brands and product names, such as `Balayage` or `Trane`.
 - Street or neighbourhood names in your area.
+
+## When "sounds like" is not enough: phonetic spelling
+
+A sounds-like spelling is read by the same voice that got the word wrong, so once in a while it still comes out differently. If a word matters and must sound the same on every call, switch the row's **Format** to **Phonetic (IPA)** and type the word in the International Phonetic Alphabet. The voice then follows the symbols exactly.
+
+1. Set **Format** to **Phonetic (IPA)** on the row.
+2. Type the transcription, for example `ˈvaɪˌfaɪ` for ViFi (vye-fye) or `ˈdaɪkɪn` for Daikin. Use `ˈ` before the stressed syllable; a plain apostrophe works too. Slashes and dots are fine: `/ˈdaɪ.kɪn/`.
+3. Press play. What you hear is exactly what callers will hear.
+4. Save. The entry is stored as separate sounds joined by `|`, for example `<<ˈ|v|aɪ|ˌ|f|aɪ>>`. You can edit that form directly if you like.
+
+Sites such as [tophonetics](https://tophonetics.com/) or a dictionary's pronunciation line give you the symbols; American English is the safest reference for the default voices. Keep sounds-like for everyday words and reserve phonetic for names the voice keeps getting wrong.
 
 ## Tips
 
