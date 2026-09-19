@@ -20,8 +20,10 @@ Connect first, then turn on automations.
 |---|---|
 | [HubSpot](/connect-your-tools/hubspot/) | Recognise callers from your CRM, log every call with notes and tasks |
 | [Google Calendar](/connect-your-tools/google-calendar/) | Check availability, book, change, and cancel appointments |
-| [Calendly](/connect-your-tools/calendly/) | Check availability and book through your Calendly event type |
-| [Square](/connect-your-tools/square/) | Check, book, change, and cancel Square Appointments |
+| [Calendly](/connect-your-tools/calendly/) | Check availability and email callers a one-time booking link |
+| [Square](/connect-your-tools/square/) | Check, book, change, and cancel Square Appointments, or hold your [Appointments](/your-agent/appointments/) |
+| Outlook / Microsoft 365 | Hold your [Appointments](/your-agent/appointments/) on an Outlook calendar |
+| Cal.com | Hold your [Appointments](/your-agent/appointments/) through your Cal.com event types |
 | [Slack](/connect-your-tools/slack/) | Call summaries, missed-call alerts, urgent pings during a call |
 | [Discord](/connect-your-tools/discord/) | The same alerts in Discord channels |
 | [Gmail](/connect-your-tools/gmail/) | Summary emails to your team, follow-up emails to callers |
