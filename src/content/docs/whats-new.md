@@ -8,6 +8,13 @@ Customer-visible changes, newest first. For what's planned, see [What's coming](
 
 ## September 2026
 
+**Appointments: booking that follows your rules** (18 September)
+
+- **New Appointments page.** Describe your services and how long they take, who does them, when you're bookable, and your notice and cancellation rules. The agent offers real open times, confirms the caller's details, reads the request back, and books; callers can move or cancel from the number they call from. Bookings can live in ViFi alone or on Google Calendar or Outlook. See [Appointments](/your-agent/appointments/).
+- **Square Appointments and Cal.com** can hold the bookings too: ViFi asks them for open times and books through them, so your services, staff, and confirmations there keep working.
+- **Outlook / Microsoft 365 and Cal.com** can now be connected on the Integrations page.
+- **Kept in sync.** Cancel or move an appointment in your calendar app and the Bookings page follows within about half an hour; **Show my calendar** shows everything else on the calendar next to the agent's bookings.
+
 **Calendar bookings that work end to end** (18 September)
 
 - **Pick from lists.** Google Calendar, Calendly event type, and Square location and service are chosen from your provider's own list instead of typed in.
