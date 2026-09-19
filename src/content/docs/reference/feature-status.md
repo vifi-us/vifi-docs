@@ -46,7 +46,7 @@ Pages in this help center carry a pill when a feature is <span class="status-pil
 |---|---|---|
 | HubSpot look-up and sync | Available | [HubSpot](/connect-your-tools/hubspot/) |
 | Google Calendar booking | Available | [Google Calendar](/connect-your-tools/google-calendar/) |
-| Calendly booking | Available | [Calendly](/connect-your-tools/calendly/) |
+| Calendly availability and emailed booking link | Available | [Calendly](/connect-your-tools/calendly/) |
 | Square Appointments | Available | [Square](/connect-your-tools/square/) |
 | Slack summaries, missed-call and urgent alerts | Available | [Slack](/connect-your-tools/slack/) |
 | Discord app and webhook | Beta | [Discord](/connect-your-tools/discord/) |

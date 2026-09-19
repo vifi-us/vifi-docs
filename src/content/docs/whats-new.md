@@ -8,6 +8,14 @@ Customer-visible changes, newest first. For what's planned, see [What's coming](
 
 ## September 2026
 
+**Calendar bookings that work end to end** (18 September)
+
+- **Pick from lists.** Google Calendar, Calendly event type, and Square location and service are chosen from your provider's own list instead of typed in.
+- **Google Calendar.** The agent tells callers the open windows in your timezone, books with the caller's name and phone number in the event, finds appointments by name, and moves or cancels them. Events no longer get a video-meeting link.
+- **Square Appointments.** Availability is checked for a service, the caller's Square customer record is found or created by phone number, and callers can find, move, or cancel their own upcoming bookings.
+- **Calendly.** Calendly does not allow bookings on a caller's behalf, so the agent now reads out open times and emails the caller a one-time booking link instead of attempting a booking that could not complete. See [Calendly](/connect-your-tools/calendly/).
+- **Clearer Activity.** A failed calendar action now says whether the provider rejected the request, the connection needs renewing, or the provider was down.
+
 **Build your knowledge base from the files you already have** (6 September)
 
 - **More file types.** Upload Word, PowerPoint, Excel, CSV, RTF, and JSON files as well as PDF, text, Markdown, and HTML. Long documents are read in full instead of the first dozen pages.
