@@ -1,20 +1,13 @@
 ---
 title: Google Calendar
-description: Let the agent check your availability and book, change, or cancel appointments while the caller is on the line.
+description: Put the agent's bookings on a Google Calendar you choose, and treat what's already there as busy.
 sidebar:
   order: 3
 ---
 
 ## What it does
 
-While on a call, the agent can:
-
-- Check availability in a date range and tell the caller the open windows.
-- Book an appointment, with the caller's name, phone number, and details in the event.
-- Look up an existing appointment by the caller's name.
-- Move or cancel one.
-
-Each is a separate automation, so you can allow booking but not cancelling, for example.
+With Google Calendar connected, [Appointments](/your-agent/appointments/) writes every booking the agent makes to a calendar you pick and treats anything already on that calendar as busy. Callers can book, move, and cancel on the phone, and the changes land on the calendar. Your services, hours, staff, and rules are set up once, under Appointments, not per action.
 
 ## Connect
 
@@ -22,17 +15,19 @@ Each is a separate automation, so you can allow booking but not cancelling, for 
 2. Choose the Google account whose calendar you want to use.
 3. Approve access.
 
-## Turn on booking
+That is all the Integrations page holds for Google Calendar: the connection.
 
-1. Open **Automations** and find the **While your agent is on a call** section.
-2. Switch on **Check Google Calendar availability** and pick the calendar from the list. Only calendars the connected account can edit are offered.
-3. Switch on the actions you want: **Book**, **Look up**, **Modify**, **Cancel**. Pick the same calendar for each and save.
+## Set up bookings
 
-::screenshot[The Google Calendar automation cards with the calendar picker open]
+1. Open **Appointments** and the **Setup** tab.
+2. Under **Where bookings go**, choose **Google Calendar** and pick the calendar from the list. Only calendars the connected account can edit are offered; use the refresh button if you just created one.
+3. Add your services, optional staff (each person can have their own calendar), your hours, and your policies. The [Appointments](/your-agent/appointments/) guide walks through each card.
+
+::screenshot[The Setup tab with Google Calendar chosen and the calendar picker open]
 
 ## How a booking call goes
 
-The agent asks what the caller wants, checks the calendar for open windows, offers times, collects the caller's name and email, reads the whole request back, and books. The event shows the caller's name, phone number, and any details they gave. The caller gets a calendar invitation when they shared an email address, and the call briefing records the booking.
+The agent offers open times from your windows minus what is on the calendar, collects the caller's name and the number they are calling from, asks for an email only if your setup requires it, reads the whole request back, and books. The event shows the caller's name, phone number, and details; the caller gets a calendar invitation when they shared an email address. Moves and cancellations update or delete the same event.
 
 Times are spoken in your business timezone, which you set in your [business profile](/your-agent/business-profile/).
 
@@ -40,9 +35,10 @@ Times are spoken in your business timezone, which you set in your [business prof
 
 - Use a dedicated "ViFi bookings" calendar if you want to review bookings before they reach your main schedule. Share it with the connected account as an editor.
 - Block time off as events. The agent treats anything on the calendar as busy and everything else as open.
-- Set your [business hours](/your-agent/business-profile/) so the agent doesn't offer times when you're closed.
-- Add a [policy](/your-agent/call-behavior/) such as "Appointments are 60 minutes; don't book back to back" for anything your calendar doesn't encode.
+- Durations, buffers, notice, and hours come from your Appointments setup, so the calendar does not need to encode them.
 
 ## If something goes wrong
 
-Open **Automations** and check **Activity**. Each attempt says whether Google rejected the request, the connection needs to be renewed (reconnect from the Integrations page), or Google was unavailable at the time.
+A booking marked **Needs attention** on the Bookings tab was recorded by ViFi but did not reach Google; open it to see why. If the connection needs to be renewed, reconnect from the Integrations page. If you cancel or move an appointment in Google Calendar, ViFi notices within about half an hour and updates the booking.
+
+Earlier versions offered separate Google Calendar actions on the Automations page. Appointments replaced them.
