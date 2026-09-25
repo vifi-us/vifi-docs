@@ -7,7 +7,7 @@ sidebar:
 
 ## What it does
 
-- **Post call summary to Slack** (after the summary is ready). A card with who called, the summary, sentiment, and action items, in the channel you pick.
+- **Post call summary to Slack** (after the summary is ready). A card with who called, the summary, sentiment, and action items, in the channel you pick. Every message ends with a link that opens the call in ViFi, with the recording and transcript.
 - **Notify Slack of missed call** (when a call goes unanswered). A short alert so someone can call back.
 - **Send urgent Slack alert** (during a call). If a caller is angry, describes an emergency, or asks for something only a person can do, the agent pings the channel without telling the caller.
 
