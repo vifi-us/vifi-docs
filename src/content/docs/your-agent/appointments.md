@@ -36,6 +36,8 @@ Leave **Email me when the agent books, moves, or cancels** on unless you'd rathe
 
 Add each thing a caller can book: a name, how long it takes, and optional buffers before and after (travel time, cleanup). Mark a service as **happening at the caller's address** and the agent will collect the address; mark it as **requiring an email** and the agent will insist on one. With Square or Cal.com, also choose which Square service or Cal.com event type the service maps to; the duration and hours then come from there.
 
+With Google Calendar or Outlook, you can also mark a service as a **video call**. The calendar event then gets a Google Meet or Microsoft Teams link, the agent tells the caller it is a video call and asks for an email address, and the invitation carries the link. Meet links need a Google Workspace account and Teams links a Microsoft work or school account; with a personal account the appointment is still booked, without a link, and the booking's history says so.
+
 The agent only offers active services, and it never offers a time the service doesn't fit into.
 
 ### Staff
@@ -62,13 +64,19 @@ Turn booking, moving, and cancelling on or off separately. Set how many hours' n
 
 Choose whether the agent asks for an email address (never, only if the caller wants a confirmation, or always) and whether it collects a date of birth.
 
+### Calendar event
+
+With Google Calendar or Outlook, this card sets what the event ViFi adds to your calendar says. Leave the title and notes empty to keep the built-in text: the service and the caller's name as the title, and the caller's notes, phone number, name, email, and how the booking was made as the notes.
+
+To write your own, use placeholders such as `{service}`, `{caller_name}`, `{caller_phone}`, `{caller_email}`, `{notes}`, `{staff}`, `{business}`, or `{channel}`; click one to add it. The preview shows the result with sample details. A line whose details the caller did not give is left out, so an empty "Email:" never shows up on the calendar.
+
 ### What the agent will say
 
 The panel at the bottom shows the exact appointment instructions the agent gets from your setup, and says when the setup isn't ready yet (no services, no hours, calendar not connected). Use **Preview open times** to see what a caller would hear for a service on a given day.
 
 ## Bookings
 
-The Bookings tab lists upcoming and past bookings with the service, the caller, who they're with, and the status. From a booking you can open the call it came from, move it to another open time, cancel it, or mark it as a no-show or completed. Turn on **Show my calendar** to see everything else on the connected calendar next to the agent's bookings.
+The Bookings tab lists upcoming and past bookings with the service, the caller, who they're with, and the status. From a booking you can open the call it came from, join its video call when the service has one, move it to another open time, cancel it, or mark it as a no-show or completed. Turn on **Show my calendar** to see everything else on the connected calendar next to the agent's bookings.
 
 A booking marked **Needs attention** was recorded by ViFi but did not reach your calendar; open it to see why, and add it to the calendar by hand.
 
