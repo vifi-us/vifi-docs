@@ -8,6 +8,12 @@ Customer-visible changes, newest first. For what's planned, see [What's coming](
 
 ## September 2026
 
+**Video calls and your own calendar event text** (25 September)
+
+- **Video call services.** With Google Calendar or Outlook, mark a service as a video call and the event gets a Google Meet or Microsoft Teams link. The agent asks for an email address so the invitation carries the link, and the Bookings page shows a **Join the video call** button. See [Appointments](/your-agent/appointments/).
+- **Calendar event text.** Set the title and notes ViFi writes on the calendar event, with placeholders for the service, the caller's details, and your notes, and see a preview as you type.
+- **Shorter booking calls.** The agent takes each detail once and reads everything back a single time, spelling names and email addresses and reading phone numbers digit by digit. The calendar event now carries the caller's real phone number and says whether the booking came from the website or a phone call.
+
 **Appointments: booking that follows your rules** (18 September)
 
 - **New Appointments page.** Describe your services and how long they take, who does them, when you're bookable, and your notice and cancellation rules. The agent offers real open times, confirms the caller's details, reads the request back, and books; callers can move or cancel from the number they call from. Bookings can live in ViFi alone or on Google Calendar or Outlook. See [Appointments](/your-agent/appointments/).
