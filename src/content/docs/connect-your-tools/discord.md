@@ -20,7 +20,7 @@ If you only want summaries in one channel, the webhook is the quickest route.
 
 ## What it does
 
-- **Post call summaries to Discord.** A card after every call once the summary is ready.
+- **Post call summaries to Discord.** A card after every call once the summary is ready. The card's title, and a line at the bottom, open the call in ViFi.
 - **Tell Discord about missed calls.** A ping the moment a call goes unanswered.
 - **Post the moment a call ends.** A bare who-and-how-long note before the summary exists.
 - **Alert Discord during a call.** The agent pings the team mid-call when someone needs a person. App connection only.

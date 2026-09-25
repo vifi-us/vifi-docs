@@ -8,6 +8,10 @@ Customer-visible changes, newest first. For what's planned, see [What's coming](
 
 ## September 2026
 
+**Notifications link to the call** (25 September)
+
+- Slack and Discord messages, the summary email sent through Gmail, the HubSpot call note, custom webhooks (`dashboard_url`), and the missed-call email now link straight to the call in ViFi, so the recording and transcript are one click away.
+
 **Video calls and your own calendar event text** (25 September)
 
 - **Video call services.** With Google Calendar or Outlook, mark a service as a video call and the event gets a Google Meet or Microsoft Teams link. The agent asks for an email address so the invitation carries the link, and the Bookings page shows a **Join the video call** button. See [Appointments](/your-agent/appointments/).

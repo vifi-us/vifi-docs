@@ -35,6 +35,6 @@ Every attempt is listed on the integration's **Activity** tab with the response 
 
 ## For technical users
 
-- Deliveries are HTTP POST requests with a JSON body and a `Content-Type: application/json` header.
+- Deliveries are HTTP POST requests with a JSON body and a `Content-Type: application/json` header. The body carries the event name, the call id, a `dashboard_url` that opens the call in ViFi, and the call details.
 - When a signing secret is set, ViFi includes a signature header computed over the body with HMAC-SHA256. Verify it before trusting the payload.
 - Respond with any 2xx status within a few seconds. Do your processing after responding if it's slow.
