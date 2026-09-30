@@ -2,7 +2,7 @@
 title: Forward your calls to ViFi
 description: Three ways to send calls to your ViFi number, with the dial codes for the major US carriers.
 sidebar:
-  order: 4
+  order: 5
 ---
 
 You keep your existing business number. To let ViFi answer, you either forward calls from that number to your ViFi number, or give out the ViFi number directly. Your ViFi number is on **Channels** in the sidebar.

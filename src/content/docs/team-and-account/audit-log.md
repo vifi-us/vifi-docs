@@ -17,6 +17,8 @@ Each row shows the time, the person, the action, and what it applied to. Use the
 
 Admins and Members can read the audit log. Viewers can't.
 
+Entries about invitations show the invited email address only to people who can manage the team. Everyone else sees those entries without the address.
+
 ## What it's for
 
 - Finding out why the agent started behaving differently. Look for policy or greeting changes around that date.

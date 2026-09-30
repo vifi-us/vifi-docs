@@ -2,7 +2,7 @@
 title: Your first week with ViFi
 description: A short checklist that turns a working agent into one you trust with every call.
 sidebar:
-  order: 5
+  order: 6
 ---
 
 The Setup Guide gets your agent answering. This list makes it good. Do one or two items a day.

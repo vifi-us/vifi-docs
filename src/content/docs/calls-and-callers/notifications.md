@@ -43,6 +43,18 @@ The **Notification preferences** card on the same page lists alerts about your o
 
 Text alerts need a verified mobile number on your account. Add one under **Account**. See [Your account](/team-and-account/your-account/).
 
+## Phone notifications in the ViFi app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> With the [ViFi mobile app](/start-here/mobile-app/) and notifications turned on, the same card also lists alerts that go to your phone. They're on by default:
+
+| Alert | What it's for |
+|---|---|
+| Missed calls | When a call rings but your agent can't pick up |
+| Call summaries | A recap after each call your agent answers |
+| Workspace invitations | When someone invites you to join their business |
+
+**Workspace invitations** only reach you if you already have a ViFi account with the invited address. Everyone gets the invitation email either way. See [Join a workspace you were invited to](/start-here/join-a-workspace/).
+
 ## Stopping texts
 
 Reply **STOP** to any text from ViFi to stop all texts to that number. Reply **START** to resume, or use the re-enable button under Notification preferences. Email alerts continue.

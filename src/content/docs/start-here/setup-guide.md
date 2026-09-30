@@ -2,7 +2,7 @@
 title: The Setup Guide, step by step
 description: The four steps from a fresh workspace to hearing your own AI agent answer a real call.
 sidebar:
-  order: 3
+  order: 4
 ---
 
 The Setup Guide is the checklist ViFi opens after you create a workspace. It has four steps and finishes when your agent completes its first real call. You can leave and come back at any time from **Setup Guide** in the sidebar.
