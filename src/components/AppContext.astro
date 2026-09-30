@@ -1,0 +1,109 @@
+---
+/**
+ * Store-restricted mode: the Help Center as seen from inside the ViFi mobile app.
+ *
+ * The app opens the Help Center as https://docs.vifi.us/?vifi_client=app. App
+ * Store and Google Play rules don't allow a way to buy outside the store from
+ * inside the app, so while that marker is set this script:
+ *
+ * - hides everything marked `data-purchase` (`:::purchase` and `:purchase[...]`
+ *   in Markdown, see src/plugins/satteri-purchase.mjs; the CSS rule is in
+ *   src/styles/theme.css), plus the "On this page" entries for headings inside it;
+ * - hides links that lead to buying (vifi.us/pricing, app billing pages,
+ *   sign-up, onboarding) even when a page forgot to mark them;
+ * - adds the marker to links into app.vifi.us, so the web app opens in its own
+ *   store-restricted mode;
+ * - turns links to the marketing site (vifi.us) into plain text, because that
+ *   site shows prices and has no restricted mode.
+ *
+ * The marker lives in sessionStorage, which is per tab: an Android Custom Tab
+ * never leaks it into the person's normal Chrome tabs. If storage is blocked,
+ * links within the Help Center carry the marker instead.
+ *
+ * Inline in <head> so purchase content is hidden before the first paint.
+ * Tests: scripts/app-context.test.mjs.
+ */
+---
+
+<script is:inline>
+  (function () {
+    var KEY = "vifi_client";
+    var APP_HOST = "app.vifi.us";
+    var MARKETING_HOSTS = ["vifi.us", "www.vifi.us"];
+    var APP_PURCHASE_PATH = /^\/(billing|settings\/billing|register|onboarding)(\/|$)/;
+    var MARKETING_PURCHASE_PATH = /^\/pricing(\/|$)/;
+
+    var fromUrl = false;
+    try {
+      fromUrl = new URLSearchParams(location.search).get(KEY) === "app";
+    } catch (e) {}
+    var stored = false;
+    var storageWorks = true;
+    try {
+      if (fromUrl) sessionStorage.setItem(KEY, "app");
+      stored = sessionStorage.getItem(KEY) === "app";
+    } catch (e) {
+      storageWorks = false;
+    }
+    if (!fromUrl && !stored) return;
+
+    document.documentElement.setAttribute("data-vifi-client", "app");
+
+    function classify(url) {
+      if (url.protocol !== "https:" && url.protocol !== "http:") return "keep";
+      if (url.origin === location.origin) return "self";
+      if (url.hostname === APP_HOST) return APP_PURCHASE_PATH.test(url.pathname) ? "purchase" : "app";
+      if (MARKETING_HOSTS.indexOf(url.hostname) !== -1) {
+        return MARKETING_PURCHASE_PATH.test(url.pathname) ? "purchase" : "marketing";
+      }
+      return "keep";
+    }
+
+    function withMarker(anchor, url) {
+      url.searchParams.set(KEY, "app");
+      anchor.setAttribute("href", url.href);
+    }
+
+    function restrict() {
+      var anchors = document.querySelectorAll("a[href]");
+      for (var i = 0; i < anchors.length; i++) {
+        var anchor = anchors[i];
+        if (anchor.closest("[data-purchase]")) continue;
+        var url;
+        try {
+          url = new URL(anchor.getAttribute("href"), location.href);
+        } catch (e) {
+          continue;
+        }
+        var kind = classify(url);
+        if (kind === "purchase") {
+          anchor.setAttribute("data-purchase", "true");
+        } else if (kind === "app" || (kind === "self" && !storageWorks)) {
+          withMarker(anchor, url);
+        } else if (kind === "marketing") {
+          var text = document.createElement("span");
+          while (anchor.firstChild) text.appendChild(anchor.firstChild);
+          anchor.parentNode.replaceChild(text, anchor);
+        }
+      }
+
+      // "On this page" links to headings that are hidden.
+      var hiddenIds = {};
+      var headings = document.querySelectorAll("[data-purchase] [id]");
+      for (var h = 0; h < headings.length; h++) hiddenIds[headings[h].getAttribute("id")] = true;
+      var fragments = document.querySelectorAll('a[href^="#"]');
+      for (var f = 0; f < fragments.length; f++) {
+        var link = fragments[f];
+        if (!hiddenIds[link.getAttribute("href").slice(1)] || link.closest("[data-purchase]")) continue;
+        (link.closest("li") || link).setAttribute("data-purchase", "true");
+      }
+
+      // Belt and braces for the CSS rule in theme.css.
+      var marked = document.querySelectorAll("[data-purchase]");
+      for (var m = 0; m < marked.length; m++) marked[m].setAttribute("hidden", "");
+    }
+
+    if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", restrict);
+    else restrict();
+  })();
+</script>

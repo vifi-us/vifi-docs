@@ -12,7 +12,7 @@ sidebar:
 
 ## Sign up
 
-1. Go to [app.vifi.us/register](https://app.vifi.us/register).
+1. Open the sign-up page:purchase[ at [app.vifi.us/register](https://app.vifi.us/register)].
 2. Enter your email and choose a password, or click **Sign in with Google**.
 3. Complete the "I'm not a robot" check if one appears.
 4. Check your inbox for a verification email and click the link. If it doesn't arrive within a few minutes, check spam, then use **Resend** on the verification screen.

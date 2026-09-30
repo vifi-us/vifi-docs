@@ -202,3 +202,10 @@
 .vifi-feedback a {
   color: var(--sl-color-text-accent);
 }
+
+/* Store-restricted mode (:::purchase directive). Pages opened from the ViFi
+   mobile app hide anything that leads to buying; src/components/AppContext.astro
+   sets data-vifi-client on <html> before the first paint. */
+:root[data-vifi-client='app'] [data-purchase] {
+  display: none !important;
+}

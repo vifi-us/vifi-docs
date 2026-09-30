@@ -70,7 +70,7 @@ Pages in this help center carry a pill when a feature is <span class="status-pil
 | Team roles: Admin, Member, Viewer | Available | [Team and roles](/team-and-account/team-and-roles/) |
 | Seeing and cancelling pending invitations | Coming soon | [Team and roles](/team-and-account/team-and-roles/) |
 | Audit log | Available | [Audit log](/team-and-account/audit-log/) |
-| Plans, checkout, promo codes, invoices | Available | [Billing](/billing/plans-and-pricing/) |
+| Plans, invoices, and payment by card | Available | [Billing](/billing/plans-and-pricing/) |
 | Spending alert and stop-limit | Available | [Usage and guardrails](/billing/usage-and-guardrails/) |
 | Self-serve downgrades | Coming soon | [Change or cancel](/billing/change-or-cancel/) |
 | Data export for your records | Coming soon | [Data and privacy](/reference/data-and-privacy/) |

@@ -1,17 +1,23 @@
 ---
 title: Invoices and payment
-description: Paying by card, finding invoices, promo codes, and what happens when a payment fails.
+description: Paying by card, finding invoices, and what happens when a payment fails.
 sidebar:
   order: 4
 ---
 
 ViFi uses Stripe for payment. Your card details are entered on Stripe's secure page and are never stored by ViFi.
 
+:::purchase
 ## Paying
 
 1. Open **Billing** and choose a plan.
 2. On the checkout page, enter your card. If you have a promo code, click **Add promotion code** and enter it before paying.
-3. Confirm. The monthly fee is charged at the start of each period; extra usage is charged at the end of the period it happened in.
+3. Confirm.
+:::
+
+## When you're charged
+
+The monthly fee is charged at the start of each period. Extra usage is charged at the end of the period it happened in.
 
 ## Updating your card
 

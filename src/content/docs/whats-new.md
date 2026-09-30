@@ -58,10 +58,12 @@ Customer-visible changes, newest first. For what's planned, see [What's coming](
 
 - Uploaded documents are split into sections so the agent finds the right passage instead of skimming the whole file. Long price lists and FAQs answer much more reliably. See [Knowledge base](/your-agent/knowledge-base/).
 
+:::purchase
 **Subscribe during the trial, promo codes** (29 July)
 
 - Subscribe at any point in the trial and the plan starts automatically when the trial ends, with an email confirming the date. See [Your free trial](/billing/free-trial/).
 - Enter a promotion code at checkout. See [Invoices and payment](/billing/invoices-and-payment/).
+:::
 
 **Onboarding defaults**
 
