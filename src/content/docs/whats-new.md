@@ -8,6 +8,18 @@ Customer-visible changes, newest first. For what's planned, see [What's coming](
 
 ## September 2026
 
+**Invitations are easier to find and accept** (29 September)
+
+- **Join instead of starting over.** After you sign in, a waiting invitation comes first, with a **Join** button. With no invitation yet, an **Invited by your employer?** card explains that you don't need to create a business and which address to have invited. See [Join a workspace you were invited to](/start-here/join-a-workspace/).
+- **Join with Google or Apple.** The invitation page offers Google and Apple as well as a password, and the new account uses the invited address. If that address already has an account, the page asks you to sign in first.
+- **Noticed from any workspace.** Pending invitations put a number on the workspace switcher and a banner on the dashboard.
+- **Clearer emails.** Invitation emails name the person who invited you and give the right expiry: 7 days. Links now start with `app.vifi.us/join`; links in older emails keep working until they expire.
+- **Private invitee addresses.** Only people who can manage the team see the addresses invitations were sent to, on the Team page and in the audit log. See [Team and roles](/team-and-account/team-and-roles/).
+
+**Sign in with Apple** (29 September)
+
+- Sign in with your Apple ID on the website, alongside Google and your password. See [Create your account](/start-here/create-your-account/).
+
 **Notifications link to the call** (25 September)
 
 - Slack and Discord messages, the summary email sent through Gmail, the HubSpot call note, custom webhooks (`dashboard_url`), and the missed-call email now link straight to the call in ViFi, so the recording and transcript are one click away.
@@ -58,10 +70,12 @@ Customer-visible changes, newest first. For what's planned, see [What's coming](
 
 - Uploaded documents are split into sections so the agent finds the right passage instead of skimming the whole file. Long price lists and FAQs answer much more reliably. See [Knowledge base](/your-agent/knowledge-base/).
 
+:::purchase
 **Subscribe during the trial, promo codes** (29 July)
 
 - Subscribe at any point in the trial and the plan starts automatically when the trial ends, with an email confirming the date. See [Your free trial](/billing/free-trial/).
 - Enter a promotion code at checkout. See [Invoices and payment](/billing/invoices-and-payment/).
+:::
 
 **Onboarding defaults**
 

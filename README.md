@@ -76,6 +76,30 @@ Something that could cost the reader money or calls.
 
 `note`, `tip`, `caution`, and `danger` are available.
 
+### Content that leads to a purchase
+
+The ViFi mobile app opens this site as `https://docs.vifi.us/?vifi_client=app`. App Store and Google Play rules don't allow a way to buy from inside the app, so while that marker is set the site hides everything marked as purchase content. On the normal website it shows as usual.
+
+Mark anything that can lead to buying: prices, choosing or changing a plan, checkout, promo codes, and links to vifi.us/pricing, app billing pages (`app.vifi.us/billing`, `/settings/billing`) or sign-up (`/register`).
+
+```md
+:::purchase
+## Choosing a plan
+
+Estimate your calls per month...
+:::
+
+1. Open the sign-up page:purchase[ at [app.vifi.us/register](https://app.vifi.us/register)].
+```
+
+- Marked content is left out of search too (`data-pagefind-ignore="all"`), so search in the app never shows a hidden section or an excerpt from it. `npm run build` fails if a heading inside the marker reaches the search index.
+- Leave a blank line between a table and the closing `:::`, or the fence becomes a table row.
+- Plain status text can stay unmarked, such as "Transfers switch on once you subscribe." Write it so the page still reads well with the marked parts gone.
+- Headings inside a block disappear from "On this page" too.
+- In the app, links into `app.vifi.us` get the marker added so the web app hides purchases as well, and links to the marketing site become plain text.
+
+`npm test` fails if a purchase link, a price table row, or words like "choose a plan", "Choose plan", "upgrade", "checkout" or "promo code" appear outside the marker. It also fails on "subscribe" as an instruction ("Subscribe so…", "or subscribe"); status text with "you" as the subject ("once you subscribe") is fine.
+
 ### Links
 
 Link to other pages with absolute paths and a trailing slash: `[Transfers](/your-agent/transfers/)`. The build fails on links to pages that don't exist.
@@ -108,8 +132,8 @@ The audience is a business owner with no technical background, reading on a phon
 npm ci
 npm run dev       # http://localhost:4321
 npm run check     # Astro and TypeScript diagnostics
-npm test          # analytics and screenshot regression checks
-npm run build     # full build with link validation
+npm test          # analytics, screenshot, and in-app purchase-hiding checks
+npm run build     # full build with link validation, then the search index check
 npm run preview   # serve the build
 ```
 
@@ -121,10 +145,10 @@ The native TypeScript 7 compiler does not provide that API.
 
 ## How it's built
 
-- **Astro 7 + Starlight 0.42.** Markdown is processed by Astro's default engine (Sätteri); the `::screenshot` directive is `src/plugins/satteri-screenshot.mjs`.
+- **Astro 7 + Starlight 0.42.** Markdown is processed by Astro's default engine (Sätteri); the `::screenshot` directive is `src/plugins/satteri-screenshot.mjs` and `:::purchase` is `src/plugins/satteri-purchase.mjs`.
 - **Theme** in `src/styles/theme.css`: the vifi.us palette (electric blue on slate) and the same self-hosted fonts.
-- **Overrides** in `src/components/`: `Head.astro` (fonts, icons, PostHog), `PageTitle.astro` (status pill), `Footer.astro` ("Was this page helpful?").
+- **Overrides** in `src/components/`: `Head.astro` (fonts, icons, PostHog, and `AppContext.astro`, which hides purchase content when the mobile app opens the site), `PageTitle.astro` (status pill), `Footer.astro` ("Was this page helpful?").
 - **Plugins:** `starlight-llms-txt` publishes `/llms.txt`, `/llms-full.txt`, and `/llms-small.txt` for AI assistants and for the platform's knowledge-base ingestion; `starlight-links-validator` fails the build on broken internal links.
-- **Search** is Pagefind, built into the site; no external service.
+- **Search** is Pagefind, built into the site; no external service. `scripts/check-search-index.mjs` runs after `astro build` and fails the build if purchase content reached the index.
 - **Deploy:** `.github/workflows/deploy.yml` builds on push to `main` and publishes to GitHub Pages. `public/CNAME` pins the custom domain. DNS for `docs.vifi.us` is a CNAME to `vifi-us.github.io` in Cloudflare.
 - **Analytics:** PostHog, same project and `.vifi.us` cookie as vifi.us and app.vifi.us, only on the production hostname and never for visitors sending Global Privacy Control.

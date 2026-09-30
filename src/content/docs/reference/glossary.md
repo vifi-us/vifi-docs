@@ -33,6 +33,8 @@ sidebar:
 
 **Integration.** A connection to another service, such as HubSpot or Google Calendar. Connect once; then choose automations.
 
+**Invitation.** An email from a business asking you to join its workspace. Its link works for 7 days. See [Join a workspace you were invited to](/start-here/join-a-workspace/).
+
 **Knowledge base.** Articles, documents, and web pages the agent can search for answers.
 
 **Overflow forwarding.** Forwarding only when your line is busy or unanswered.

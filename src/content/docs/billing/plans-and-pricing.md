@@ -7,6 +7,7 @@ sidebar:
 
 ViFi is a monthly subscription. Each plan includes a block of **AI minutes** and a block of **text segments**. Use more, and the extra is charged at a per-unit rate that gets cheaper on bigger plans.
 
+:::purchase
 Current prices are on [vifi.us/pricing](https://vifi.us/pricing) and in the checkout. At the time of writing:
 
 | | Starter | Growth | Business |
@@ -16,6 +17,8 @@ Current prices are on [vifi.us/pricing](https://vifi.us/pricing) and in the chec
 | Text segments included | 100 | 500 | 2,000 |
 | Extra minutes | $0.15 each | $0.12 each | $0.10 each |
 | Extra text segments | $0.03 each | $0.03 each | $0.02 each |
+
+:::
 
 Every plan includes the full agent: summaries and transcripts, recordings, caller memory, knowledge base, integrations and automations, the website widget, and team access. The plans differ in included usage and the price of extras.
 
@@ -27,9 +30,11 @@ The time your agent spends on a call, rounded up to the next whole minute per ca
 
 Carriers split text messages into segments of about 160 characters. A long text is two or three segments. Segments sent *and* received on your ViFi number both count. Texts ViFi sends you personally, such as sign-in codes and call summaries, don't count.
 
+:::purchase
 ## Choosing a plan
 
 Estimate your calls per month and multiply by three minutes. Fifty calls a month is roughly 150 minutes, which fits Growth with room to spare, or Starter with some extra-minute charges. You can change plans later; see [Change or cancel your plan](/billing/change-or-cancel/).
+:::
 
 ## No contracts
 

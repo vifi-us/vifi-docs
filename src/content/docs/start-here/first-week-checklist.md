@@ -2,7 +2,7 @@
 title: Your first week with ViFi
 description: A short checklist that turns a working agent into one you trust with every call.
 sidebar:
-  order: 5
+  order: 6
 ---
 
 The Setup Guide gets your agent answering. This list makes it good. Do one or two items a day.
@@ -33,7 +33,7 @@ The Setup Guide gets your agent answering. This list makes it good. Do one or tw
 ## Before the trial ends
 
 - [ ] Decide whether calls should be recorded and what the recording notice says. See [Recording and compliance](/your-agent/recording-and-compliance/).
-- [ ] Subscribe so your number keeps answering after the trial and transfers to a person switch on. See [Your free trial](/billing/free-trial/).
+- [ ] Check what happens when the trial ends: without a paid plan the agent stops answering, and transfers to a person stay off. See [Your free trial](/billing/free-trial/).
 - [ ] Set a spending alert so extra usage never surprises you. See [Usage and guardrails](/billing/usage-and-guardrails/).
 - [ ] Set your transfer number so callers who insist on a person get one. See [Transfers](/your-agent/transfers/).
 

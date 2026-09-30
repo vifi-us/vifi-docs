@@ -5,6 +5,7 @@ import { satteri } from '@astrojs/markdown-satteri';
 import starlightLlmsTxt from 'starlight-llms-txt';
 import starlightLinksValidator from 'starlight-links-validator';
 import screenshotPlugin from './src/plugins/satteri-screenshot.mjs';
+import purchasePlugin from './src/plugins/satteri-purchase.mjs';
 
 const SITE = 'https://docs.vifi.us';
 
@@ -13,8 +14,9 @@ export default defineConfig({
 	output: 'static',
 	trailingSlash: 'always',
 	markdown: {
-		// Astro 7's default Markdown engine plus our `::screenshot[...]` directive.
-		processor: satteri({ features: { directive: true }, mdastPlugins: [screenshotPlugin] }),
+		// Astro 7's default Markdown engine plus our `::screenshot[...]` and
+		// `:::purchase` / `:purchase[...]` directives.
+		processor: satteri({ features: { directive: true }, mdastPlugins: [screenshotPlugin, purchasePlugin] }),
 	},
 	integrations: [
 		starlight({

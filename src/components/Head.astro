@@ -1,6 +1,7 @@
 ---
 /**
  * Extends Starlight's <head> with:
+ * - store-restricted mode for pages opened from the ViFi mobile app (AppContext)
  * - font preloads for the two faces the first paint needs
  * - the versioned icon set shared with vifi.us
  * - PostHog product analytics, same project and cookie domain as vifi.us and
@@ -12,9 +13,12 @@
  * visitors sending the Global Privacy Control signal.
  */
 import Default from '@astrojs/starlight/components/Head.astro';
+import AppContext from './AppContext.astro';
 ---
 
 <Default><slot /></Default>
+
+<AppContext />
 
 <link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
 <link rel="preload" href="/fonts/jetbrains-mono-latin.woff2" as="font" type="font/woff2" crossorigin />

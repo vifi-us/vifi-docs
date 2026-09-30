@@ -2,7 +2,7 @@
 title: The Setup Guide, step by step
 description: The four steps from a fresh workspace to hearing your own AI agent answer a real call.
 sidebar:
-  order: 3
+  order: 4
 ---
 
 The Setup Guide is the checklist ViFi opens after you create a workspace. It has four steps and finishes when your agent completes its first real call. You can leave and come back at any time from **Setup Guide** in the sidebar.
@@ -67,7 +67,7 @@ The guide completes on its own once a call finishes. If you'd rather skip the te
 
 ## After the guide
 
-You land on the dashboard with a short "make it yours" checklist: add policies, review the knowledge base, connect your tools, and subscribe. A good order is in [Your first week](/start-here/first-week-checklist/).
+You land on the dashboard with a short "make it yours" checklist: add policies, review the knowledge base, and connect your tools:purchase[, then subscribe]. A good order is in [Your first week](/start-here/first-week-checklist/).
 
 ## Trouble?
 

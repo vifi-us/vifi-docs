@@ -9,15 +9,26 @@ Open **Team** in the sidebar. Admins can invite people, change roles, and remove
 
 ## Inviting someone
 
-1. Click **Invite team member**.
+1. Click **Invite User**.
 2. Enter their email address and choose a role.
-3. Send. They get an email with a link. If they don't have a ViFi account, the link lets them create one with that email address.
+3. Click **Send Invite**.
+
+They get an email that names you and your business, with a link that works for 7 days. Invite the address they'll sign in with: ViFi matches invitations by email address. For someone who signs in with Google at work, that's their work address.
 
 ::screenshot[The Team page with the member list and the invite form]
 
-:::note[Known issue]
-Invitations that haven't been accepted yet don't appear in the list, so you can't see or cancel a pending invite from this page. If someone didn't get their invitation, check their spam folder, then send it again.
-:::
+If they already use ViFi, the invitation also shows up in the app and on the website: a number on their workspace switcher, a banner, and a phone notification if they use the ViFi mobile app. People who are new to ViFi join from the email link and don't need to create a business. Send them [Join a workspace you were invited to](/start-here/join-a-workspace/) if they're unsure.
+
+## Pending invitations
+
+Admins see **Pending invitations** below the team, with when each one expires.
+
+- **Resend** sends a fresh email with a new link. The old link stops working, so ask your teammate to use the newest email.
+- **Revoke** cancels the invitation.
+
+Expired, revoked, and declined invitations move to **Invitation history**, where **Invite again** sends a new one.
+
+Only people who can manage the team see the addresses invitations were sent to, here and in the [audit log](/team-and-account/audit-log/).
 
 ## Roles
 
@@ -46,4 +57,4 @@ Use the menu at the end of a member's row. The workspace owner can't be removed.
 
 ## More than one business
 
-Each business gets its own workspace with its own team. A person can belong to several workspaces and switch between them from the top of the sidebar.
+Each business gets its own workspace with its own team. A person can belong to several workspaces and switch between them from the top of the sidebar. When another business invites you, a number appears on the switcher; see [Join a workspace you were invited to](/start-here/join-a-workspace/#when-you-already-use-vifi).

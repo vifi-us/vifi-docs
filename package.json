@@ -7,7 +7,7 @@
     "start": "astro dev",
     "check": "astro check",
     "test": "node --test scripts/*.test.mjs",
-    "build": "astro build",
+    "build": "astro build && node scripts/check-search-index.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

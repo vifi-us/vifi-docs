@@ -23,11 +23,14 @@ This list is drawn from work that's scheduled, not from ideas. Dates aren't prom
 
 ## Account and billing
 
-- **Sign in with Apple and Microsoft.**
+- **Sign in with Microsoft.**
 - **Passkeys.**
 - **Self-serve downgrades**, taking effect at the end of the period.
 - **Data export** for your records.
-- **Pending invitations** visible and cancellable on the Team page.
+
+## On your phone
+
+- **The ViFi mobile app** for iPhone and Android: calls, messages, your agent, phone notifications, and invitations that open straight in the app. See [The ViFi mobile app](/start-here/mobile-app/).
 
 ## Analytics
 

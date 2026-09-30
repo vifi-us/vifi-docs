@@ -63,14 +63,16 @@ Pages in this help center carry a pill when a feature is <span class="status-pil
 
 | Feature | Status | Where |
 |---|---|---|
-| Email and password, Google sign-in | Available | [Create your account](/start-here/create-your-account/) |
-| Sign in with Apple and Microsoft | Coming soon | [Create your account](/start-here/create-your-account/) |
+| Email and password, Google and Apple sign-in | Available | [Create your account](/start-here/create-your-account/) |
+| Sign in with Microsoft | Coming soon | [Create your account](/start-here/create-your-account/) |
 | Two-factor: authenticator app, text, email; backup codes | Available | [Security](/team-and-account/security/) |
 | Passkeys | Coming soon | [Security](/team-and-account/security/) |
 | Team roles: Admin, Member, Viewer | Available | [Team and roles](/team-and-account/team-and-roles/) |
-| Seeing and cancelling pending invitations | Coming soon | [Team and roles](/team-and-account/team-and-roles/) |
+| Pending invitations: resend, revoke, invite again | Available | [Team and roles](/team-and-account/team-and-roles/) |
+| Invitations: join link, joining with Google or Apple, switcher badge and banner | Available | [Join a workspace](/start-here/join-a-workspace/) |
+| ViFi mobile app for iPhone and Android | Coming soon | [The ViFi mobile app](/start-here/mobile-app/) |
 | Audit log | Available | [Audit log](/team-and-account/audit-log/) |
-| Plans, checkout, promo codes, invoices | Available | [Billing](/billing/plans-and-pricing/) |
+| Plans, invoices, and payment by card | Available | [Billing](/billing/plans-and-pricing/) |
 | Spending alert and stop-limit | Available | [Usage and guardrails](/billing/usage-and-guardrails/) |
 | Self-serve downgrades | Coming soon | [Change or cancel](/billing/change-or-cancel/) |
 | Data export for your records | Coming soon | [Data and privacy](/reference/data-and-privacy/) |
