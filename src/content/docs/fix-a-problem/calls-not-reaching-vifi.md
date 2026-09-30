@@ -7,7 +7,7 @@ sidebar:
 
 ## 1. Is the caller approved?
 
-During the free trial, only [approved callers](/calls-and-callers/approved-callers/) get through. Calls from any other number are not answered. Test from an approved phone, or subscribe.
+During the free trial, only [approved callers](/calls-and-callers/approved-callers/) get through. Calls from any other number are not answered. Test from an approved phone:purchase[, or subscribe].
 
 ## 2. Does the ViFi number itself answer?
 

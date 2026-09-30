@@ -15,7 +15,7 @@ Keep the help center accurate, plainly written, and easy to navigate for busines
 - Don't add client-side JavaScript beyond what Starlight ships and the three small scripts in `src/components/` (feedback widget, PostHog, and `AppContext.astro` for pages opened from the mobile app).
 - Don't add external services. Search is Pagefind; analytics is the existing PostHog project.
 - Keep `public/CNAME` as `docs.vifi.us`.
-- Anything that can lead to buying ViFi goes inside `:::purchase` (or `:purchase[...]` inline): prices, choosing or changing a plan, checkout, promo codes, and links to vifi.us/pricing, app billing pages or sign-up. The mobile app opens this site with `?vifi_client=app`, and App Store and Google Play rules forbid a way to buy from there, so marked content is hidden in that context. Plain status text can stay unmarked. `npm test` fails on unmarked purchase links, price table rows and purchase words.
+- Anything that can lead to buying ViFi goes inside `:::purchase` (or `:purchase[...]` inline): prices, choosing or changing a plan, checkout, promo codes, and links to vifi.us/pricing, app billing pages or sign-up. The mobile app opens this site with `?vifi_client=app`, and App Store and Google Play rules forbid a way to buy from there, so marked content is hidden in that context. Plain status text can stay unmarked. Marked content is also kept out of search. `npm test` fails on unmarked purchase links, price table rows and purchase words, and `npm run build` fails if purchase content reaches the search index.
 
 ## Where to change what
 
@@ -26,7 +26,7 @@ Keep the help center accurate, plainly written, and easy to navigate for busines
 | Status pill / sidebar badge | Page frontmatter `status`; rendering in `src/components/PageTitle.astro` and `src/route-middleware.ts` |
 | Screenshot placeholder syntax | `src/plugins/satteri-screenshot.mjs` |
 | `:::purchase` directive | `src/plugins/satteri-purchase.mjs` |
-| Hiding purchase content inside the mobile app | `src/components/AppContext.astro`; CSS rule in `src/styles/theme.css`; tests in `scripts/app-context.test.mjs` and `scripts/purchase.test.mjs` |
+| Hiding purchase content inside the mobile app | `src/components/AppContext.astro`; CSS rule in `src/styles/theme.css`; tests in `scripts/app-context.test.mjs` and `scripts/purchase.test.mjs`; search index check in `scripts/check-search-index.mjs` |
 | Colors, fonts, pill and figure styles | `src/styles/theme.css` |
 | `<head>` extras, analytics | `src/components/Head.astro` |
 | "Was this page helpful?" | `src/components/Footer.astro` |

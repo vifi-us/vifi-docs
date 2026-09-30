@@ -67,7 +67,7 @@ The guide completes on its own once a call finishes. If you'd rather skip the te
 
 ## After the guide
 
-You land on the dashboard with a short "make it yours" checklist: add policies, review the knowledge base, connect your tools, and subscribe. A good order is in [Your first week](/start-here/first-week-checklist/).
+You land on the dashboard with a short "make it yours" checklist: add policies, review the knowledge base, and connect your tools:purchase[, then subscribe]. A good order is in [Your first week](/start-here/first-week-checklist/).
 
 ## Trouble?
 

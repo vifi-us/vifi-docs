@@ -9,22 +9,18 @@
  * the app never shows a way to buy (App Store 3.1.1 and 3.1.3, Google Play
  * payments policy). Plain status text can stay outside the marker.
  *
- * `{search="off"}` also keeps the content out of the search index, so prices
- * never appear in search results inside the app:
- *
- *     :::purchase{search="off"}
- *     | Plan | Price |
- *     :::
+ * Marked content is also left out of the Pagefind search index
+ * (`data-pagefind-ignore="all"`), so search inside the app never shows a
+ * hidden section, its heading, or an excerpt from it. `npm run build` checks
+ * the built index (scripts/check-search-index.mjs).
  *
  * A Sätteri mdast plugin, same shape as Starlight's own asides plugin: the
  * directive becomes a node whose `data.hName` picks the HTML element.
  */
 export const PURCHASE_DIRECTIVE = 'purchase';
 
-function properties(attributes) {
-  const props = { 'data-purchase': 'true' };
-  if (attributes && attributes.search === 'off') props['data-pagefind-ignore'] = 'all';
-  return props;
+function properties() {
+  return { 'data-purchase': 'true', 'data-pagefind-ignore': 'all' };
 }
 
 export default function purchasePlugin() {
@@ -34,7 +30,7 @@ export default function purchasePlugin() {
       if (node.name !== PURCHASE_DIRECTIVE) return;
       return {
         type: 'paragraph',
-        data: { hName: 'div', hProperties: properties(node.attributes) },
+        data: { hName: 'div', hProperties: properties() },
         children: [...node.children],
       };
     },
@@ -42,7 +38,7 @@ export default function purchasePlugin() {
       if (node.name !== PURCHASE_DIRECTIVE) return;
       return {
         type: 'emphasis',
-        data: { hName: 'span', hProperties: properties(node.attributes) },
+        data: { hName: 'span', hProperties: properties() },
         children: [...node.children],
       };
     },

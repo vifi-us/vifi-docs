@@ -7,7 +7,7 @@ sidebar:
 
 ViFi is a monthly subscription. Each plan includes a block of **AI minutes** and a block of **text segments**. Use more, and the extra is charged at a per-unit rate that gets cheaper on bigger plans.
 
-:::purchase{search="off"}
+:::purchase
 Current prices are on [vifi.us/pricing](https://vifi.us/pricing) and in the checkout. At the time of writing:
 
 | | Starter | Growth | Business |

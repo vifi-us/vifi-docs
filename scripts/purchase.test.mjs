@@ -13,24 +13,26 @@ test('a :::purchase block renders as a div marked data-purchase', () => {
   const children = [{ type: 'paragraph', children: [{ type: 'text', value: '$49 a month' }] }];
   const node = plugin.containerDirective({ type: 'containerDirective', name: 'purchase', attributes: {}, children });
   assert.equal(node.type, 'paragraph');
-  assert.deepEqual(node.data, { hName: 'div', hProperties: { 'data-purchase': 'true' } });
+  assert.deepEqual(node.data, { hName: 'div', hProperties: { 'data-purchase': 'true', 'data-pagefind-ignore': 'all' } });
   assert.deepEqual(node.children, children);
 });
 
 test('an inline :purchase[...] renders as a span marked data-purchase', () => {
   const children = [{ type: 'link', url: 'https://app.vifi.us/register', children: [{ type: 'text', value: 'sign up' }] }];
   const node = plugin.textDirective({ type: 'textDirective', name: 'purchase', attributes: {}, children });
-  assert.deepEqual(node.data, { hName: 'span', hProperties: { 'data-purchase': 'true' } });
+  assert.deepEqual(node.data, { hName: 'span', hProperties: { 'data-purchase': 'true', 'data-pagefind-ignore': 'all' } });
   assert.deepEqual(node.children, children);
 });
 
-test('{search="off"} also keeps the content out of the search index', () => {
-  const block = plugin.containerDirective({ type: 'containerDirective', name: 'purchase', attributes: { search: 'off' }, children: [] });
-  assert.equal(block.data.hProperties['data-pagefind-ignore'], 'all');
-  const inline = plugin.textDirective({ type: 'textDirective', name: 'purchase', attributes: { search: 'off' }, children: [] });
-  assert.equal(inline.data.hProperties['data-pagefind-ignore'], 'all');
-  const other = plugin.containerDirective({ type: 'containerDirective', name: 'purchase', attributes: { search: 'on' }, children: [] });
-  assert.equal(other.data.hProperties['data-pagefind-ignore'], undefined);
+test('purchase content is always kept out of the search index, whatever its attributes', () => {
+  // Search inside the app would otherwise show hidden sections ("Upgrading",
+  // "Promo codes") and their excerpts. scripts/check-search-index.mjs checks the build.
+  for (const attributes of [undefined, {}, { search: 'on' }, { search: 'off' }]) {
+    const block = plugin.containerDirective({ type: 'containerDirective', name: 'purchase', attributes, children: [] });
+    assert.equal(block.data.hProperties['data-pagefind-ignore'], 'all');
+    const inline = plugin.textDirective({ type: 'textDirective', name: 'purchase', attributes, children: [] });
+    assert.equal(inline.data.hProperties['data-pagefind-ignore'], 'all');
+  }
 });
 
 test('other directives are left for Starlight', () => {
@@ -65,8 +67,13 @@ function isPurchaseLink(href) {
   return false;
 }
 
-// Words that only appear when telling someone how to buy or change a plan.
-const PURCHASE_WORDS = /choos(e|ing) (a|your) plan|upgrad|checkout|promo(tion)? codes?/i;
+// Words that only appear when telling someone how to buy or change a plan:
+// choosing a plan (the web app's button is "Choose plan"), upgrading, checkout,
+// promo codes, and "subscribe" as an instruction ("Subscribe so...", "or
+// subscribe"). Status text with "you" as the subject stays allowed ("Transfers
+// switch on once you subscribe"), as do "subscribed" and "subscription".
+const PURCHASE_WORDS =
+  /\b(choose|chooses|choosing|pick|picking|select|selecting) (a |an |your |the |another )?(new |paid |different )?plans?\b|upgrad|checkout|promo(tion)? codes?|(?<!\byou (already )?)\bsubscribe\b/i;
 // A table row with a dollar amount is a price table.
 const PRICE_ROW = /^\s*\|.*\$\s?\d/;
 
@@ -153,6 +160,33 @@ test('the content check understands blocks, inline spans, and nesting', () => {
   assert.ok(!isPurchaseLink('/billing/plans-and-pricing/'));
 });
 
+test('the purchase words catch instructions to buy, not status text', () => {
+  const instructions = [
+    '- [ ] Subscribe so your number keeps answering after the trial.',
+    'Subscribe from **Billing** and everything resumes within a minute.',
+    'Test from an approved phone, or subscribe.',
+    'add policies, review the knowledge base, and connect your tools, then subscribe.',
+    'Click Billing to subscribe.',
+    'On the home page, click **Choose plan**.',
+    '1. Open **Billing** and choose a plan.',
+    'Pick a new plan.',
+    '## Upgrading',
+    'Enter a promotion code at checkout.',
+  ];
+  for (const text of instructions) assert.match(text, PURCHASE_WORDS, text);
+  const status = [
+    'Transfers switch on once you subscribe.',
+    'Both switch on the moment you subscribe.',
+    "If you've already subscribed, the email confirms the activation date instead.",
+    '## If the trial ends without a subscription',
+    "The ViFi mobile app doesn't cancel subscriptions.",
+    'Unsubscribe from these emails at the bottom of any message.',
+    'The trial starts when you pick a phone number.',
+    'The plans differ in included usage.',
+  ];
+  for (const text of status) assert.doesNotMatch(text, PURCHASE_WORDS, text);
+});
+
 test('every page marks what can lead to a purchase', () => {
   const problems = [];
   for (const path of pages()) {
@@ -187,7 +221,7 @@ test('a closing ::: never directly follows a table row', () => {
 
 test('the pages the spec names are marked', () => {
   const plans = readFileSync(join(DOCS, 'billing/plans-and-pricing.md'), 'utf8');
-  assert.match(plans, /:::purchase\{search="off"\}\nCurrent prices are on \[vifi\.us\/pricing\][\s\S]*?\| Extra text segments [^\n]*\n\n:::\n/);
+  assert.match(plans, /:::purchase\nCurrent prices are on \[vifi\.us\/pricing\][\s\S]*?\| Extra text segments [^\n]*\n\n:::\n/);
   assert.match(plans, /:::purchase\n## Choosing a plan\n/);
   const change = readFileSync(join(DOCS, 'billing/change-or-cancel.md'), 'utf8');
   assert.match(change, /:::purchase\n## Upgrading\n[\s\S]*## Downgrading\n[\s\S]*?\n:::\n/);

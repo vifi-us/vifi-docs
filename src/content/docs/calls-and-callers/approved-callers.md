@@ -19,7 +19,7 @@ Your own mobile is approved automatically during the Setup Guide.
 
 ## What unapproved callers hear
 
-Calls from any other number are not answered by the agent. If you've forwarded your business line during the trial, real customers won't get through to ViFi. Forward your line after subscribing, or test with the approved phones only. See [Forward your calls](/start-here/forward-your-calls/).
+Calls from any other number are not answered by the agent. If you've forwarded your business line during the trial, real customers won't get through to ViFi. Until your workspace accepts every caller, test from the approved phones only and don't forward your business line yet. See [Forward your calls](/start-here/forward-your-calls/).
 
 ## After the trial
 
