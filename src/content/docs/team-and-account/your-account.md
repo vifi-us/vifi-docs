@@ -35,4 +35,10 @@ A log of security events on your account: sign-ins, password changes, verificati
 
 ## Deleting your account
 
-Deleting removes your access to every workspace. It doesn't delete the workspaces themselves; another Admin keeps them. If you're the only Admin, transfer that role first. To delete a whole workspace and its data, see [Change or cancel your plan](/billing/change-or-cancel/).
+**Delete account** is at the bottom of the **Profile** tab. Deleting your account signs you out everywhere and gives you 30 days to change your mind; signing in before then cancels it. After that, your name, email, and phone number are erased.
+
+- **Businesses only you use** are paused right away and closed for good with your account.
+- **Businesses where you're a member** keep running, and you're removed from them.
+- **A business you own that other people use** blocks the deletion. Make one of them the owner first, from the menu on their row on the **Team** page.
+
+For the steps in the app, on the website, or by email, and what's kept afterwards, see [Delete your account](/team-and-account/delete-your-account/).
