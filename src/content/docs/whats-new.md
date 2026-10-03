@@ -20,6 +20,10 @@ Customer-visible changes, newest first. For what's planned, see [What's coming](
 
 - Sign in with your Apple ID on the website, alongside Google and your password. See [Create your account](/start-here/create-your-account/).
 
+**Delete your account yourself** (28 September)
+
+- **Delete account** on the **Account** page shows which businesses will close and which you'll leave, then deletes your account after 30 days. Signing in before then cancels it and brings everything back. See [Delete your account](/team-and-account/delete-your-account/).
+
 **Notifications link to the call** (25 September)
 
 - Slack and Discord messages, the summary email sent through Gmail, the HubSpot call note, custom webhooks (`dashboard_url`), and the missed-call email now link straight to the call in ViFi, so the recording and transcript are one click away.

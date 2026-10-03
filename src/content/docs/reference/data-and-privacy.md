@@ -38,7 +38,7 @@ ViFi builds a profile per phone number from what callers say on calls. Your team
 - **A recording:** delete it from the call page. Logged.
 - **A caller's data:** email [support@vifi.us](mailto:support@vifi.us) with the phone number.
 - **A workspace and everything in it:** an Admin emails support.
-- **Your own account:** from **Account**, or via support.
+- **Your own account:** from **Account** on the website, in the ViFi app, or by emailing support. See [Delete your account](/team-and-account/delete-your-account/).
 
 ## Exporting data
 
