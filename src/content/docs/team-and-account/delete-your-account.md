@@ -68,7 +68,7 @@ When the 30 days are up, ViFi deletes the account within a day and emails you on
 | Your name, email address, password, and mobile number | Erased. All that's left of your account is an ID with no name or contact details. |
 | Google and Apple sign-in links, two-step verification, and your notification and text-alert settings | Deleted. ViFi also tells Apple to revoke Sign in with Apple for ViFi. |
 | The phones you got notifications on, with their notification tokens and device names | Deleted on the day you ask. |
-| Your membership in businesses you don't own | Removed. Things you added there, such as articles or notes, stay with that business. Its audit log shows "Deleted User" instead of your name. |
+| Your membership in businesses you don't own | Removed. Things you added there, such as articles or notes, stay with that business. Its audit log keeps the record of what you did there, with a placeholder instead of your email address. |
 | Businesses that only you used | Closed for good. The ViFi number is released, any subscription is cancelled, and nobody can open the business again. |
 | Call recordings and files uploaded to the knowledge base in those businesses | Deleted. |
 | Call history, transcripts, summaries, caller profiles, text messages, knowledge base articles, and settings in those businesses | Marked as deleted and hidden from everyone. ViFi doesn't yet erase these records automatically. To have them erased, email [support@vifi.us](mailto:support@vifi.us). |
