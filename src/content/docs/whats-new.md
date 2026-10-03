@@ -6,6 +6,26 @@ tableOfContents: false
 
 Customer-visible changes, newest first. For what's planned, see [What's coming](/reference/whats-coming/).
 
+## October 2026
+
+**Add a business, decline an invitation**
+
+- **Anyone can add a business.** Any ViFi account with a confirmed email can now create a business, from the workspace switcher or from the screen you see before you have one. You can have up to three at a time that are still being set up or in their trial. See [Add a business](/start-here/add-a-business/).
+- **You open where you left off.** ViFi opens the business you used last, on the website and in the app.
+- **Decline from the email.** Invitation emails have a **Decline this invitation** link. It opens a page that asks you to confirm, and nothing is declined until you do. The invitation page has a **Decline invitation** button too. See [Declining an invitation](/start-here/join-a-workspace/#declining-an-invitation).
+- **A limit on invitations from new businesses.** While a workspace is being set up or in its trial, it can have up to 25 invitations waiting and send up to 20 a day. See [Team and roles](/team-and-account/team-and-roles/).
+
+**Smaller improvements on the website**
+
+- **Not relevant.** Hide an unanswered question that doesn't need an answer; it comes back if a caller asks it again. Questions an article already answers leave the list on their own. See [Knowledge base](/your-agent/knowledge-base/#unanswered-what-to-teach-next).
+- **Caller names.** Calls, callers, and text conversations show the caller's name, when the agent learned it, with the number underneath.
+- **Analytics in your time zone.** Calls by day and by hour now follow your business's time zone instead of UTC, and **Bookings** counts the calls where your agent booked an appointment. See [Analytics](/calls-and-callers/analytics/).
+- **Days off for bookings.** The appointment days-off setting has a clearer name and says it doesn't change the hours your agent gives. **Let callers book appointments** now saves as soon as you switch it. See [Appointments](/your-agent/appointments/).
+
+**In the ViFi app** <span class="status-pill status-pill--coming-soon">Coming soon</span>
+
+The app, still in testing, gained a Home tab that shows whether your agent is answering, what needs you, and today's appointments and missed calls; Insights; call search and swipe actions; appointment alerts, days off, and cancelling with a reason; Voice & language, Pronunciation, Hours, and Menu & prices on the Agent tab; your mobile number and text alerts; and adding or switching businesses. See [The ViFi mobile app](/start-here/mobile-app/).
+
 ## September 2026
 
 **Invitations are easier to find and accept** (29 September)

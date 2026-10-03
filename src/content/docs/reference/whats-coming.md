@@ -30,7 +30,7 @@ This list is drawn from work that's scheduled, not from ideas. Dates aren't prom
 
 ## On your phone
 
-- **The ViFi mobile app** for iPhone and Android: calls, messages, your agent, phone notifications, and invitations that open straight in the app. See [The ViFi mobile app](/start-here/mobile-app/).
+- **The ViFi mobile app** for iPhone and Android: a Home tab that shows whether your agent is answering and what needs you, calls and messages, Insights, appointments with booking alerts, your agent's settings, phone notifications, and invitations and businesses you can join, decline, add, and switch between. See [The ViFi mobile app](/start-here/mobile-app/).
 
 ## Analytics
 
