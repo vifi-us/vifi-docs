@@ -25,6 +25,8 @@ sidebar:
 
 **Channel.** A way customers reach your agent: a phone number or the website widget.
 
+**Days off for bookings.** Dates when callers can't book appointments, such as holidays. They don't change the business hours your agent tells callers. See [Appointments](/your-agent/appointments/).
+
 **Disclaimer.** The recording notice read at the start of a call.
 
 **Fallback line.** What the agent says when it can't answer and has nothing to look up.
@@ -33,7 +35,9 @@ sidebar:
 
 **Integration.** A connection to another service, such as HubSpot or Google Calendar. Connect once; then choose automations.
 
-**Invitation.** An email from a business asking you to join its workspace. Its link works for 7 days. See [Join a workspace you were invited to](/start-here/join-a-workspace/).
+**Invitation.** An email from a business asking you to join its workspace. Its link works for 7 days, and you can join or decline. See [Join a workspace you were invited to](/start-here/join-a-workspace/).
+
+**Key terms.** Words your callers say that the agent should listen for, such as product or staff names, so it hears them correctly. See [Pronunciation guide](/your-agent/pronunciation/).
 
 **Knowledge base.** Articles, documents, and web pages the agent can search for answers.
 
@@ -55,4 +59,4 @@ sidebar:
 
 **Webhook.** A way to send call data to another system by web address.
 
-**Workspace.** One business's set-up in ViFi: its agent, calls, team, and billing. You can belong to several.
+**Workspace.** One business's set-up in ViFi: its agent, calls, team, and billing. You can belong to several, and add your own. The ViFi app calls it a business. See [Add a business](/start-here/add-a-business/).

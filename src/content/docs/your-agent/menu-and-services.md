@@ -33,6 +33,14 @@ With **Look up menu and services** turned on (see [Call behavior](/your-agent/ca
 
 Many businesses use both: the menu for the price list, articles for the questions around it.
 
+## In the ViFi app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> Open **Agent**, then **Menu & prices**. "Your agent reads these prices to callers." Admins and Members can make changes.
+
+- **Sold out.** Each item has a switch. Turn it off while you're out of something; the item shows **Sold out** and your agent tells callers it isn't available. It saves straight away.
+- **Adding an item.** Tap **Add an item**, then fill in the **Name**, **Category** (or tap one you already use), **Price**, and an optional **Description**. Tap **Save**.
+- **Changing or deleting.** Tap an item to edit it, or **Delete item** to remove it. To hide something for a while, switch it off instead.
+
 ## Who can edit
 
 Admins and Members can manage the menu. Viewers can see it.

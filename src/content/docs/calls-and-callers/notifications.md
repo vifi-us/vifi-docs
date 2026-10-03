@@ -1,6 +1,6 @@
 ---
 title: Notifications
-description: Who gets told about calls, by email or text, and the account alerts ViFi sends you.
+description: Who gets told about calls, by email or text, the account alerts ViFi sends you, and phone notifications in the ViFi app.
 sidebar:
   order: 8
 ---
@@ -39,7 +39,7 @@ The **Notification preferences** card on the same page lists alerts about your o
 | Payment failed | Email |
 | Phone number ready | Email |
 | New sign-in detected | Email and text; always on |
-| Two-factor settings changed | Email and text; always on |
+| MFA settings changed (two-factor) | Email and text; always on |
 
 Text alerts need a verified mobile number on your account. Add one under **Account**. See [Your account](/team-and-account/your-account/).
 
@@ -49,12 +49,28 @@ Text alerts need a verified mobile number on your account. Add one under **Accou
 
 | Alert | What it's for |
 |---|---|
-| Missed calls | When a call rings but your agent can't pick up |
 | Call summaries | A recap after each call your agent answers |
+| Missed calls | When a call rings but your agent can't pick up |
+| Appointment changes | When your agent books, moves or cancels an appointment |
 | Workspace invitations | When someone invites you to join their business |
+
+**Appointment changes** only covers changes your agent makes on a call, never your team's own changes. The alert shows the service, day, and time, but not who the caller is. It's separate from the booking email set up on the Appointments page. See [Booking alerts on your phone](/your-agent/appointments/#booking-alerts-on-your-phone).
 
 **Workspace invitations** only reach you if you already have a ViFi account with the invited address. Everyone gets the invitation email either way. See [Join a workspace you were invited to](/start-here/join-a-workspace/).
 
+### The Notifications screen in the app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> In the app, open **More**, then **Notifications**. The screen starts with what affects you on this phone, then your own alerts, then the team's settings:
+
+1. **This phone.** Whether this phone gets notifications. If it doesn't, tap **Turn on notifications**. If you turned them off for ViFi in your phone's settings, the app says how to turn them back on.
+2. **Your alerts**, "Messages sent just to you." Each alert in the tables above has its own group with switches for **Phone notification**, **Email**, and **Text message**, depending on which it supports. If an alert can be texted and you haven't added a mobile number, a **Get alerts by text** card offers **Add your mobile number**.
+3. **Texts go to**: the mobile number your text alerts use. Tap it to change or verify the number. See [Your account](/team-and-account/your-account/#your-mobile-number-in-the-app).
+4. **For everyone at Lopez Plumbing** (Admins only): the call summaries your whole team gets. **Email a call summary**, **Text a call summary**, **Daily summary**, and who receives them. These are the same settings as the **Call transcripts and daily summary** card on the website.
+
 ## Stopping texts
 
-Reply **STOP** to any text from ViFi to stop all texts to that number. Reply **START** to resume, or use the re-enable button under Notification preferences. Email alerts continue.
+Reply **STOP** to any text from ViFi to stop all texts to that number. Reply **START** to resume, or use **Re-enable platform SMS** on the website's **Notifications** page. Email alerts continue.
+
+In the app <span class="status-pill status-pill--coming-soon">Coming soon</span>, the Notifications screen and your **Mobile number** both show "Texts from ViFi are off" after a STOP, with a **Turn texts back on** button. Your alert choices come back as they were.
+
+If texts still don't arrive after you turn them back on, reply **START** to any text from ViFi. The text message service ViFi uses keeps its own record of your STOP, and START clears it.

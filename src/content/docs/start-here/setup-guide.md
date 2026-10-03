@@ -69,6 +69,14 @@ The guide completes on its own once a call finishes. If you'd rather skip the te
 
 You land on the dashboard with a short "make it yours" checklist: add policies, review the knowledge base, and connect your tools:purchase[, then subscribe]. A good order is in [Your first week](/start-here/first-week-checklist/).
 
+## Opening the Setup Guide again in the app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> In the [ViFi app](/start-here/mobile-app/), Admins can go back through setup at any time: open **Agent**, then **Setup guide**. **Business info** has an **Open the Setup guide** row too.
+
+If setup is finished, it opens on an overview of the four steps, **Find your business**, **Get your number**, **Meet your agent**, and **Call your agent**, with a check mark on each one you've done. Open any step to change it, for example to re-read your Google listing or manage your test phones. If setup isn't finished, it opens where you left off.
+
+The app's **Meet your agent** step also has your agent's **Language**, **Switch to the caller's language**, and **Hear it** for the greeting.
+
 ## Trouble?
 
 - The number step says it's taking longer than usual: give it a few minutes, then see [Calls aren't reaching ViFi](/fix-a-problem/calls-not-reaching-vifi/).

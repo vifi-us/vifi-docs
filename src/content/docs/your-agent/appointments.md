@@ -22,7 +22,7 @@ Callers can also ask to move or cancel an appointment. The agent finds it from t
 
 ### Where bookings go
 
-Switch appointments on, then choose where bookings are kept:
+Turn on **Let callers book appointments**. The switch saves right away, and the agent offers appointments only while it's on and the setup below is ready. Turn it off any time to stop new bookings; callers can still leave a message. Then choose where bookings are kept:
 
 - **ViFi calendar** keeps bookings in ViFi only. Good if you don't use a shared calendar or want to start simple. Callers who give an email get a confirmation from ViFi.
 - **Google Calendar** or **Outlook / Microsoft 365** writes each booking to a calendar you pick and treats anything already on that calendar as busy. Connect the account on the [Integrations](/connect-your-tools/overview/) page first, then pick the calendar from the list.
@@ -56,7 +56,13 @@ Then set the rules the agent follows when it offers times:
 | Minimum notice | How soon the earliest bookable time can be |
 | How far ahead | The last day the agent will book |
 | Max bookings per day | Caps what the agent books on any one day (blank means no cap) |
-| Blackout dates | Days the agent never offers, such as holidays |
+| Days off for bookings | Days callers can't book, such as holidays or a vacation. Click **Add day off** for each one |
+
+Click **Save changes** when you're done.
+
+:::note[Days off don't change your hours]
+A day off for bookings only stops the agent offering appointments that day. The agent still tells callers your usual business hours, and appointments already booked on that day stay booked. To change the hours the agent gives, edit your [business hours](/your-agent/business-profile/#setting-business-hours).
+:::
 
 ### Policies
 
@@ -83,6 +89,58 @@ A booking marked **Needs attention** was recorded by ViFi but did not reach your
 If you cancel or move an appointment in your calendar app, Square, or Cal.com, ViFi notices within about half an hour and updates the booking, so the agent never tells a caller about an appointment that no longer exists.
 
 ::screenshot[The Bookings tab with an upcoming booking selected]
+
+## In the ViFi app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> Open **More**, then **Appointments**. Services, staff, hours, booking limits, and calendar connections are still set up on the website; **Appointment setup** at the bottom of the list opens it.
+
+### Your appointments
+
+- **Upcoming** lists today and the next 60 days; **Past 30 days** lists recent ones, newest first. Each row shows the caller, the time, the service, and who it's with, plus a label such as **Moved** or **Needs attention** when it isn't simply confirmed.
+- **Show my calendar** appears when bookings go to Google Calendar, Outlook, Square, or Cal.com. Turn it on to also list what's on that calendar that ViFi didn't book, marked **Calendar**. The setting is kept on this phone only.
+
+### Turning booking on or off
+
+1. Tap **Booking and days off** at the bottom of the list. Only Admins see it.
+2. Turn **Let callers book** on or off.
+
+When it's off, "Your agent doesn't offer appointments. Callers can still leave a message." This is the same switch as **Let callers book appointments** on the website.
+
+### Days off for bookings
+
+1. Tap **Booking and days off**, then **Days off for bookings**.
+2. Tap **Add a day off** and pick the date.
+
+Each day is saved as soon as you add it. Tap **Remove** next to a day to open it for bookings again. As the screen says: "Callers can't book on these days. This doesn't change the hours your agent gives. Appointments already booked on a day off stay booked."
+
+### Looking at one appointment
+
+Tap an appointment to see:
+
+- the service, the time, who it's with, and **Join the video call** if the service is a video call;
+- the **Customer**: name, phone, email, address, and date of birth if your setup collects it, with **Call** and **Text** buttons that use your own phone;
+- **Details**: whether it was **Booked by your agent**, **Booked by your team**, or came **From your calendar**, a link to **See the call**, the booking system, and the time zone;
+- **History**: every change, oldest first. For example **Booked**, **Moved** (from and to), **Cancelled** with the reason, **Marked done**, or **Moved in your calendar**.
+
+Admins can also:
+
+- **Move to another time**: pick a new open time, a week at a time, or use **Jump to a date**. You can move it as far ahead as you take bookings.
+- **Mark done** or **No-show** once the appointment is over, and **Undo done** or **Undo no-show** if you tapped the wrong one.
+- **Cancel appointment**, with a reason.
+
+### Cancelling with a reason
+
+1. Open the appointment and tap **Cancel appointment**.
+2. Optionally, type a **Reason**, for example "they called to say they're sick". Only you and your team see it; it's kept in the appointment's history.
+3. Tap **Cancel appointment**, then confirm. The time opens up for other callers.
+
+### Booking alerts on your phone
+
+When your agent books, moves, or cancels an appointment on a call, everyone on the team who has turned on notifications in the app gets an alert: **New booking**, **Booking moved**, or **Booking cancelled**, with the service, day, time, and who it's with. For example: "Haircut · Thu, Oct 8 at 2:30 PM with Maria". The caller's name, number, and other details never appear on the lock screen. Tap the alert to open the appointment; if it's for another of your businesses, the app switches to it first.
+
+You only get alerts for changes your agent makes on a call. Changes you or your team make in the app or on the website don't send one, and neither do changes made in your calendar.
+
+To stop them, open **More**, then **Notifications**, and turn off **Phone notification** under **Appointment changes**. On Android, these alerts have their own notification category, **Appointments**, so you can give them their own sound in your phone's settings. The booking email (**Email me when the agent books, moves, or cancels**) is separate and isn't affected. See [Notifications](/calls-and-callers/notifications/).
 
 ## Testing
 

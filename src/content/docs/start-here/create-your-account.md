@@ -29,9 +29,9 @@ Google and Apple sign-in are available. Sign in with Microsoft is built but not 
 
 ## Create your workspace
 
-A workspace is where you set up and manage the AI agent for one business. After you verify your email, ViFi asks for your **business name** and creates the workspace. You become its **Admin**.
+A workspace is where you set up and manage the AI agent for one business. After you verify your email, enter your **Business Name** and click **Create Workspace**. You become its **Admin**.
 
-If you run more than one business, you can create a workspace for each and switch between them from the top of the sidebar.
+If you run more than one business, you can add a workspace for each and switch between them from the top of the sidebar. See [Add a business](/start-here/add-a-business/).
 
 If you were invited to a business, don't create a workspace: join theirs. When an invitation is waiting for you, ViFi shows it first, with a **Join** button.
 
@@ -44,6 +44,8 @@ If you created an account without an invitation and expected to see a workspace,
 ## "Registration is invite-only"
 
 ViFi can be switched to invite-only mode. If you see this message, you need an invitation to create an account: open the link in your invitation email. To ask for access, email [support@vifi.us](mailto:support@vifi.us).
+
+Invite-only applies to new accounts. Once you have an account and have confirmed your email, you can always create a business.
 
 ## What happens next
 

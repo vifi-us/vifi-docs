@@ -7,6 +7,8 @@ sidebar:
 
 The dashboard is the first thing you see when you sign in. It answers three questions: is my agent live, what did callers need, and what needs follow-up.
 
+In the ViFi app, the **Home** tab does the same job. See [Home and Insights in the app](/calls-and-callers/app-home/). <span class="status-pill status-pill--coming-soon">Coming soon</span>
+
 ::screenshot[The dashboard with the alert strip, the three stat cards, and today at a glance]
 
 ## Alerts

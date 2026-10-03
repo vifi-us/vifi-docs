@@ -39,6 +39,18 @@ Leave it off if you'd rather the agent always stay in one language.
 
 If the agent says your business name or a product wrong, don't change the spelling in your profile. Add the word to the [pronunciation guide](/your-agent/pronunciation/) instead.
 
+## In the ViFi app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> Open **Agent**, then **Voice & language**. The row shows your language underneath and your voice on the right.
+
+- **Language.** Tap it to pick from the same ten languages. "Your agent greets callers and answers in this language. Write your greeting in it too."
+- **Switch to the caller's language.** "If a caller speaks another language your agent knows, it answers in theirs for the rest of the call."
+- **Voice.** Search by name, accent, or style, and tap play to hear a voice. With a language other than English, the voices recommended for it come first. Pick one and tap **Save**.
+
+Some voices don't have a recorded sample. For those, the app makes a short sample on the spot, in English; only Admins can play these. Only business Admins can change the voice and language.
+
+The **Meet your agent** step of the Setup guide in the app has the same **Language** and **Switch to the caller's language** settings.
+
 ## For technical users: providers
 
 **Settings**, then **Providers** shows which services handle speech-to-text, the language model, and text-to-speech for your workspace, and lets you pick the voice from the same catalog. You don't need to change anything there for normal use.

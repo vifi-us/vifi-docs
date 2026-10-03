@@ -14,8 +14,11 @@ Open **Messages** in the sidebar to see every text sent or received on your ViFi
 - **Reading messages.** Anyone who texts your ViFi number appears as a conversation. Open one to see the thread, newest at the bottom, with delivery ticks on outbound messages.
 - **The one-time follow-up text.** On a call, if the caller asks for something in writing, the agent can offer ViFi's one-time text. It reads a short required notice, and if the caller clearly agrees, ViFi sends one fixed confirmation message. The agent capability for this is **Text the caller** under [Call behavior](/your-agent/call-behavior/).
 - **All messages.** A second tab lists every message in time order, useful for checking what happened on a given day.
+- **Names.** When the agent learned a texter's name on a call, the conversation shows the name with the number underneath.
 
 ::screenshot[The Messages page with a conversation open]
+
+In the [ViFi app](/start-here/mobile-app/) <span class="status-pill status-pill--coming-soon">Coming soon</span>, the **Messages** tab lists conversations the same way. Open one and tap **Calls and details** to see that person's calls and caller profile, or the phone icon to call them from your own phone. You can read texts in the app but not reply.
 
 ## What doesn't work yet
 

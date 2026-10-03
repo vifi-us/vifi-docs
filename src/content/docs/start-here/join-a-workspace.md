@@ -1,6 +1,6 @@
 ---
 title: Join a workspace you were invited to
-description: Your employer or a colleague invited you to ViFi. How to join their workspace, which Google or Apple account to use, and where invitations show up.
+description: Your employer or a colleague invited you to ViFi. How to join their workspace or decline, which Google or Apple account to use, and where invitations show up.
 sidebar:
   order: 3
 ---
@@ -11,11 +11,13 @@ If a business that uses ViFi invited you, you join their workspace. **You don't 
 
 The email comes from ViFi and says who invited you, for example "Maria Lopez invited you to join Lopez Plumbing on ViFi".
 
-- The link in it works for **7 days**. The email says when it expires.
+- The **Accept Invitation** button works for **7 days**. The email says when it expires.
 - If the business sends the invitation again, only the newest email's link works. Use that one.
 - The link starts with `https://app.vifi.us/join`. On a phone with the [ViFi app](/start-here/mobile-app/) installed, it opens the app. Otherwise it opens in your browser.
 
 Opening the link doesn't join you on its own. You always confirm first, so nothing happens if a mail filter opens the link to check it.
+
+Under the button, the email says "Not interested? **Decline this invitation**." See [Declining an invitation](#declining-an-invitation).
 
 ## If you don't have a ViFi account yet
 
@@ -47,15 +49,15 @@ If you choose **Hide My Email**, Apple gives ViFi a private relay address instea
 
 ## When you sign in without a workspace
 
-If you sign in and don't belong to a workspace yet, ViFi shows what fits your situation:
+If you sign in and don't belong to a workspace yet, you have two choices: join a business that invited you, or create your own. ViFi shows what fits your situation:
 
-- **You've been invited.** Your invitations come first, each showing the business, your role, and who invited you. Choose **Join**. If you really do want a separate business as well, **Create a new business** is underneath.
-- **Invited by your employer?** No invitation has reached your address yet. As the card says: "You don't need to create a business. Ask them to invite *your address* — invitations appear here automatically." Use **Check again** once they've sent it, or **Use a different account** if they invited another address.
-- **Waiting for an invitation.** ViFi is invite-only right now, so you can't create a business yourself. Ask the business to invite the address shown, then use **Check again**.
+- **Confirm your email first.** Until you click the link in the verification email, you can't join or create anything. Use **Resend Verification Email** if it didn't arrive.
+- **You've been invited.** Your invitations come first, each showing the business, your role, and who invited you. Choose **Join**, or **Decline invitation** if it isn't for you. If you really do want a separate business as well, **Create a new business** is underneath.
+- **No invitation yet.** You can create a business straight away: on the website, enter its name and choose **Create Workspace**. Underneath, the **Invited by your employer?** card says: "You don't need to create a business. Ask them to invite *your address* — invitations appear here automatically." If you're waiting to join someone else's business, don't create one: use **Check again** once they've sent the invitation, or **Use a different account** if they invited another address.
 - **Your invitation expired.** Invitations last 7 days. Ask the business to invite you again.
 - **Couldn't check your invitations.** A connection problem. Use **Retry**.
 
-New invitations appear on this screen within about a minute, without refreshing.
+New invitations appear on this screen within about a minute, without refreshing. To create a business, see [Add a business](/start-here/add-a-business/).
 
 ## When you already use ViFi
 
@@ -68,15 +70,38 @@ Invitations to another business show up wherever you are.
 
 **In the [ViFi app](/start-here/mobile-app/):** <span class="status-pill status-pill--coming-soon">Coming soon</span>
 
-- A number appears on the **More** tab, and the same banner appears on **Home**. Tapping it opens **More**, then **Invitations**.
-- **Switch workspace** lists your invitations at the top.
+- A number appears on the **More** tab, and the same banner appears on **Home**. Tapping **Review** opens **More**, then **Invitations**.
+- The business switcher at the top of **Home** shows how many invitations are waiting. **More**, then **Invitations** lists them, each with **Join** and **Decline**.
 - If notifications are on, your phone shows **Workspace invitation**: "Maria Lopez invited you to join Lopez Plumbing". Tap it to open your invitations. You can turn these off under **Notifications**, **Workspace invitations**. See [Notifications](/calls-and-callers/notifications/).
 
-Joining adds the business to your workspace switcher and opens it. Your other workspaces stay as they are. To turn an invitation down, decline it; if you change your mind, ask the business to invite you again.
+Joining adds the business to your workspace switcher and opens it. Your other workspaces stay as they are.
+
+## Declining an invitation
+
+Declining tells the business you won't join. Nothing else changes: you stay signed in, and your own workspaces stay as they are. If you change your mind, ask the business to invite you again.
+
+### From the email
+
+1. In the invitation email, click **Decline this invitation**.
+2. A page opens in your browser and asks you to confirm: "Decline the invitation to Lopez Plumbing for *your address*? You won't join."
+3. Click **Decline invitation**. The page says **Invitation declined**.
+
+Nothing is declined until you click that button. Opening the link, or a mail filter checking it, doesn't decline anything, and **Cancel** leaves the invitation open. You don't need to sign in to decline.
+
+The decline link always opens in your browser, even on a phone with the ViFi app.
+
+### On the website
+
+The invitation page has **Not interested?** with a **Decline invitation** button under the join options. If you're already signed in, the invitation in your list of **Workspace invitations** has a **Decline invitation** button too. Either way, ViFi asks you to confirm first.
+
+### In the ViFi app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> Tap **Decline invitation** on the invitation screen that opens from the email, or **Decline** on the invitation under **More**, then **Invitations**. The app asks you to confirm, and the invitation leaves your list.
 
 ## Something went wrong
 
-- **"Invitation unavailable"**: the link expired, was cancelled, was already used, or was replaced by a newer email. Ask the business for a new invitation.
+- **"Invitation unavailable"**: the link expired, was cancelled, was already used or declined, or was replaced by a newer email. Ask the business for a new invitation.
+- **"Invitation already accepted"** after you tried to decline: someone already used this invitation to join. Declining now wouldn't remove anyone, so ask the business's Admin if access needs to change.
 - **You created a business by mistake**: it doesn't stop you joining. Join the invited workspace from the switcher, and email [support@vifi.us](mailto:support@vifi.us) if you'd like the extra one deleted.
 - **Nothing arrives**: check spam, then ask the person who invited you to check the address on their **Team** page. See [Team and roles](/team-and-account/team-and-roles/).
 

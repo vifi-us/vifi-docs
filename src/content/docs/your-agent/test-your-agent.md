@@ -19,6 +19,12 @@ The call shows up in **Calls** like any other, with a summary and transcript, so
 
 Before your trial starts, a small number of browser test calls are free and don't count against anything. After that, test calls use AI minutes like any other call.
 
+## From the ViFi app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> In the [ViFi app](/start-here/mobile-app/), Admins can tap **Test your agent** on the **Agent** tab. While you're still setting up, the same button is on **Home**. Talk to the agent through your phone's microphone, then hang up.
+
+When the call ends, tap **See what your agent understood** to open the call with its summary. The summary takes about a minute; if the call isn't listed yet, the button opens **Calls**. **Call again** starts another test.
+
 ## From your phone
 
 Call your ViFi number from a phone on the [approved callers](/calls-and-callers/approved-callers/) list. After the trial, any phone works. This is the most realistic test because it goes through the same route as a customer's call.
