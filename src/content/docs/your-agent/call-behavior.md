@@ -21,6 +21,8 @@ Policies are rules in plain English. The agent reads them before every decision 
 
 Policies beat everything else. If a policy says "never quote a price" and the knowledge base contains a price list, the agent still won't quote it.
 
+In the [ViFi app](/start-here/mobile-app/) <span class="status-pill status-pill--coming-soon">Coming soon</span>, open **Agent**, then **Rules it follows** to read your policies. They're shown read-only there. To change them, Admins tap **Edit in your browser**, which opens this page on the website. With no policies yet, the screen says "Your agent follows its standard guardrails."
+
 :::tip
 Policies are for what the agent must *never* or *always* do. Facts about your business belong in the [business profile](/your-agent/business-profile/) or [knowledge base](/your-agent/knowledge-base/), where the agent can look them up when they're relevant.
 :::
@@ -46,6 +48,8 @@ Connected tools add more capabilities, such as booking appointments. Those live 
 - **Max call duration.** Calls end automatically after this many seconds. The default is generous; lower it if you see callers keeping the line open.
 - **Silence timeout.** The agent hangs up after this much silence, so a caller who walks away doesn't run up minutes.
 - **Allow interruptions.** Lets callers talk over the agent and get a faster reply. When it's on, the agent stops speaking as soon as the caller starts a real sentence; brief acknowledgements like "uh-huh" or "okay" don't cut it off, and if a cough or background noise stops it by mistake, it picks up where it left off after a moment of silence. Turn it off for a scripted experience where the agent should always finish, for example a legally required disclosure.
+
+In the [ViFi app](/start-here/mobile-app/) <span class="status-pill status-pill--coming-soon">Coming soon</span>, **Agent**, then **Call handling** has the same limits as **Longest call**, **Hang up after silence**, and **Callers can interrupt**. The same screen covers recording, the recording notice, spam blocking, and the **Repeat-call guard**. Only business Admins can change them.
 
 ## When the agent gives up
 

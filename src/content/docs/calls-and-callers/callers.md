@@ -21,7 +21,9 @@ Open **Callers** in the sidebar. Every phone number that has reached your agent 
 
 ## Searching
 
-Search by phone number. Names aren't reliable identifiers, so ViFi organises by number.
+Search by phone number. Names aren't reliable identifiers, so ViFi organises by number. When the agent learned a caller's name on a call, the list shows it with the number underneath.
+
+In the [ViFi app](/start-here/mobile-app/) <span class="status-pill status-pill--coming-soon">Coming soon</span>, tap **Callers** at the top of the **Calls** tab, or **More**, then **Blocked & approved callers**. Search there by name, number, or tag. The same screen leads to **Blocked callers**, which has its own search by part of the number or a word from the note, and to your approved callers.
 
 ## Blocking a caller
 

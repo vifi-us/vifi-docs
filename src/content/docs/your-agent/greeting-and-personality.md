@@ -48,6 +48,23 @@ A few rules about them:
 - They're capped at about 2,000 characters. If you find yourself writing more, most of it probably belongs in the [knowledge base](/your-agent/knowledge-base/) or in [policies](/your-agent/call-behavior/).
 - They accept the same chips as the greeting.
 
+## In the ViFi app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> Open **Agent**, then **Greeting**.
+
+1. Type in **What your agent says when it picks up**, or leave it empty and your agent greets callers in its own words.
+2. Tap a chip to add a value that fills in automatically: **Business name**, **Agent name**, or **Recording notice**.
+3. Check **Callers will hear**, which shows the greeting with the values filled in.
+4. Tap **Hear it** to play the greeting in your agent's saved voice. Only Admins can play it.
+5. Tap **Save**.
+
+A few things to know:
+
+- Greetings longer than 300 characters are too long to play in the app. Make a [test call](/your-agent/test-your-agent/) to hear them.
+- Previews use English pronunciation. If your agent speaks another language, the app says the preview can sound different from a real call.
+- If the recording notice is turned off in **Call handling**, the preview leaves it out, because your agent skips it.
+- The fallback line is the field **What it says when it isn't sure**. It has no chips; write it out in full.
+
 ## See what the agent sees
 
 The **Prompt preview** section on the Agent page shows the full set of instructions the agent receives, the call context it gets at the start of each call, and the tools it has. It's read-only and useful when the agent does something you didn't expect.

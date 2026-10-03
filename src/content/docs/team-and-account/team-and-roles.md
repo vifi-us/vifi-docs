@@ -19,6 +19,10 @@ They get an email that names you and your business, with a link that works for 7
 
 If they already use ViFi, the invitation also shows up in the app and on the website: a number on their workspace switcher, a banner, and a phone notification if they use the ViFi mobile app. People who are new to ViFi join from the email link and don't need to create a business. Send them [Join a workspace you were invited to](/start-here/join-a-workspace/) if they're unsure.
 
+If they'd rather not join, they can decline from the email or in ViFi. Their invitation then moves to **Invitation history** as declined.
+
+While your workspace is still being set up or in its free trial, it can have up to 25 invitations waiting at once and send up to 20 in a day. Past that, ViFi says "This business has sent a lot of invitations recently. Wait for people to join, or withdraw some invitations, then try again."
+
 ## Pending invitations
 
 Admins see **Pending invitations** below the team, with when each one expires.
@@ -57,4 +61,4 @@ Use the menu at the end of a member's row. The workspace owner can't be removed.
 
 ## More than one business
 
-Each business gets its own workspace with its own team. A person can belong to several workspaces and switch between them from the top of the sidebar. When another business invites you, a number appears on the switcher; see [Join a workspace you were invited to](/start-here/join-a-workspace/#when-you-already-use-vifi).
+Each business gets its own workspace with its own team. A person can belong to several workspaces and switch between them from the top of the sidebar, and anyone with a confirmed account can add one. See [Add a business](/start-here/add-a-business/). When another business invites you, a number appears on the switcher; see [Join a workspace you were invited to](/start-here/join-a-workspace/#when-you-already-use-vifi).

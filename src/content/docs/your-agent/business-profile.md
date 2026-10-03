@@ -33,6 +33,27 @@ The Setup Guide sometimes leaves every day set to closed when it couldn't read y
 Hours only affect what the agent *says*. The agent answers calls at any hour. To change what happens after hours, see [After-hours and overflow](/best-practices/after-hours-and-overflow/).
 :::
 
+## In the ViFi app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> Open **Agent**. Only business Admins can make changes; everyone else can read.
+
+### Business info
+
+**Business info** has the **Business name**, **What your business does**, your **Website**, the **Type of business**, and **Services**: type one in **Add a service** and tap **Add**, up to 30. **Name in your business list** is the name you see when you switch between businesses; callers don't hear it. Your phone, address, and email come from your Google listing or website and can't be edited here; to update them, find your business again in the Setup guide.
+
+### Hours
+
+**Hours** is its own screen. The top shows whether you're open right now in your business's time zone, for example "Open now · closes 5 PM" or "Closed now · opens tomorrow 9 AM".
+
+1. Check **Time zone**. Tap it to change it.
+2. Turn each day on or off.
+3. For an open day, tap the opening or closing time to set it with your phone's time picker.
+4. Tap **Save**.
+
+If a day closes after midnight, such as 6 PM to 2 AM, set the closing time earlier than the opening time; the app shows **Closes after midnight**. Once Monday is set, **Use Monday's hours for Tue–Fri** copies it across.
+
+If **Home** says "Business hours are set to Closed every day", **Fix hours** opens this screen.
+
 ## Re-reading your website
 
 ViFi reads your website and Google listing once, during the Setup Guide. It doesn't re-read them automatically. If your services or hours change, update the profile here, or add the new details as a [knowledge base](/your-agent/knowledge-base/) article.

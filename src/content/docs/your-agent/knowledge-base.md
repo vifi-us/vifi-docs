@@ -69,7 +69,22 @@ Add the pages that answer real questions: pricing, services, hours, policies, FA
 
 Every time the agent looks for an answer and finds nothing, the question lands here. Pick a window from the last 7 to 90 days. Each row shows how many times callers asked something similar.
 
-Click **Convert to article** next to a question, write the answer, and it becomes an article. This is the single most effective habit for improving your agent. See [Knowledge base tips](/best-practices/knowledge-base-tips/).
+Click **Convert** next to a question, write the answer, and it becomes an article. This is the single most effective habit for improving your agent. See [Knowledge base tips](/best-practices/knowledge-base-tips/).
+
+Once an active article answers a question, the question leaves the list on its own.
+
+### Hiding a question that doesn't matter
+
+Some questions aren't worth an answer, such as a wrong number or a joke. Click **Not relevant** to hide one. ViFi says "Hidden until a caller asks it again", with **Undo** in case you clicked the wrong row.
+
+A hidden question comes back if a caller asks it again after you hid it, counting only the newer calls. Hiding applies to everyone in your workspace. Admins and Members can hide questions.
+
+### In the ViFi app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> Open **Agent**, then **What your agent knows**. A card shows how many questions your agent couldn't answer in the last 30 days; tap it to open **Unanswered questions**. **Home** shows the same count under **Needs attention**, with **Teach your agent**.
+
+- Tap a question to write the answer.
+- Tap **Not relevant** to hide it. A banner at the top says it "comes back if a caller asks it again", with **Undo**.
 
 ## Who can edit
 

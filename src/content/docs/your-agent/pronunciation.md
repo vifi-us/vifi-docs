@@ -1,13 +1,13 @@
 ---
 title: Pronunciation guide
-description: Teach the agent how to say names, brands, and industry terms it gets wrong.
+description: Teach the agent how to say names, brands, and industry terms it gets wrong, and which words to listen for when callers say them.
 sidebar:
   order: 4
 ---
 
 The voice sounds out unfamiliar words the way a new employee would, and sometimes gets them wrong. The pronunciation guide fixes that one word at a time.
 
-Open **Agent** in the sidebar and find **Pronunciation**.
+Open **Agent** in the sidebar and find **Pronunciation**. It has two parts: the pronunciation guide, for how the agent *says* words, and **Key Terms**, for words it should *hear* correctly.
 
 ## Adding a word
 
@@ -37,6 +37,33 @@ A sounds-like spelling is read by the same voice that got the word wrong, so onc
 4. Save. The entry is stored as separate sounds joined by `|`, for example `<<ˈ|v|aɪ|ˌ|f|aɪ>>`. You can edit that form directly if you like.
 
 Sites such as [tophonetics](https://tophonetics.com/) or a dictionary's pronunciation line give you the symbols; American English is the safest reference for the default voices. Keep sounds-like for everyday words and reserve phonetic for names the voice keeps getting wrong.
+
+## Key terms: words callers say
+
+The pronunciation guide changes how the agent speaks. Key terms help it understand: they're words your callers use that it might otherwise mishear, such as product names, services, or staff names. For example, `Balayage` or `Dr. Martinez`.
+
+1. In **Key Terms**, type a word or phrase and click **Add**.
+2. Add as many as you need, up to 100, then click **Save**.
+
+Your business name and services are included automatically, so you don't need to add them.
+
+## In the ViFi app
+
+<span class="status-pill status-pill--coming-soon">Coming soon</span> Open **Agent**, then **Pronunciation**. Only business Admins can make changes.
+
+**How your agent says words** lists the pronunciation guide. To add a word:
+
+1. Tap **Add a word**.
+2. Fill in **Word as it's written** and **Say it like**, for example `Daikin` and `DYE-kin`.
+3. Tap **Hear it** to play it in your agent's voice. Adjust until it sounds right.
+4. Optionally, pick a **Kind of word**: Brand, Staff, Product, Acronym, or Other.
+5. Tap **Save**.
+
+For phonetic spelling, turn on **Use phonetic symbols (IPA)** under **Advanced**. Tap a word to change it or **Remove word**. The guide holds up to 200 words.
+
+**Words callers say** is the key terms list. Type a word or phrase and tap **Add**; it's saved straight away. Tap the ⓧ on a word to remove it.
+
+If you play a lot of previews in a row, the app says "Too many previews in a row. Wait a minute, then try again."
 
 ## Tips
 
