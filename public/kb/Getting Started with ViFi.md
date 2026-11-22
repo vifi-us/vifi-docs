@@ -4,7 +4,7 @@
 An email address, about ten minutes, and your own mobile phone so you can call your agent and hear it answer. A business phone number you can forward helps, but you can also hand out the ViFi number directly. No card is needed for the free trial, and there is nothing to install.
 
 ## Creating an account
-Go to app.vifi.us slash register. Enter your email and a password of at least ten characters, or click Sign in with Google. Verify your email from the message ViFi sends. Then give your business name; that creates your workspace and makes you its Admin. If a colleague invited you, use the link in the invitation email instead, and the workspace appears in your account.
+Go to app.vifi.us slash register. Enter your email and a password of at least ten characters, or use Sign in with Google or Apple. Verify your email from the message ViFi sends. Then give your business name; that creates your workspace and makes you its Admin. If a colleague invited you, use the link in the invitation email instead, and the workspace appears in your account.
 
 ## The Setup Guide: four steps
 Step one, find your business: start typing the business name and pick it from Google's listings; ViFi reads the website and listing to learn what you do, your services, and your hours. Step two, get your number: ViFi suggests an area code and shows available local numbers to pick from. Step three, meet your agent: review the drafted business profile and hours, choose the agent's name, voice, and greeting, and switch on capabilities such as taking messages. Step four, call your agent: call the number from your own phone, which is already approved, and watch the summary and transcript appear. The guide completes on its own when the first call finishes.

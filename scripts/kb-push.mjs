@@ -35,7 +35,7 @@ if (!Object.values(want).some(Boolean)) {
 }
 
 let token = process.env.VIFI_ACCESS_TOKEN || "";
-const headers = () => ({ Authorization: `Bearer ${token}` });
+const headers = () => token ? { Authorization: `Bearer ${token}` } : {};
 
 async function call(method, route, body, { raw = false } = {}) {
   const init = { method, headers: { ...headers() } };
@@ -49,20 +49,31 @@ async function call(method, route, body, { raw = false } = {}) {
 }
 
 async function login() {
-  if (token) return;
-  const email = process.env.VIFI_EMAIL, password = process.env.VIFI_PASSWORD;
-  if (!email || !password) { console.error("set VIFI_ACCESS_TOKEN, or VIFI_EMAIL and VIFI_PASSWORD"); process.exit(64); }
-  const res = await call("POST", "/auth/login", { email, password });
-  if (res.mfa_required) { console.error("this account requires two-factor sign-in; copy a session token into VIFI_ACCESS_TOKEN instead"); process.exit(65); }
-  token = res.access_token;
-  const wanted = opt("--tenant", "");
-  if (wanted && Array.isArray(res.tenants)) {
-    const t = res.tenants.find((x) => [x.name, x.tenant_name].some((n) => (n || "").toLowerCase() === wanted.toLowerCase()));
-    if (!t) { console.error(`no workspace named "${wanted}"; available: ${res.tenants.map((x) => x.name || x.tenant_name).join(", ")}`); process.exit(66); }
-    const sw = await call("POST", "/auth/switch-tenant", { tenant_id: t.tenant_id || t.id });
-    token = sw.access_token;
-    console.log(`workspace: ${t.name || t.tenant_name}`);
+  const wanted = (flag("--tenant") ? opt("--tenant", "") : "ViFi").trim();
+  if (!wanted || wanted.startsWith("--")) throw new Error("--tenant needs a workspace name");
+  const tokenProvided = Boolean(token);
+  if (!tokenProvided) {
+    const email = process.env.VIFI_EMAIL, password = process.env.VIFI_PASSWORD;
+    if (!email || !password) throw new Error("Set VIFI_ACCESS_TOKEN or VIFI_EMAIL and VIFI_PASSWORD");
+    const session = await call("POST", "/auth/login", { email, password });
+    if (session.mfa_required) throw new Error("Use VIFI_ACCESS_TOKEN for an account with two-factor sign-in");
+    if (!session.access_token) throw new Error("Sign-in did not return an access token");
+    token = session.access_token;
   }
+
+  const memberships = await call("GET", "/auth/tenants");
+  const matches = memberships.filter((m) => norm(m.name || m.tenant_name) === norm(wanted));
+  if (matches.length !== 1) throw new Error(`Expected exactly one membership named "${wanted}"`);
+  const id = matches[0].id || matches[0].tenant_id;
+  if (!id) throw new Error("Membership is missing its workspace ID");
+  if (!tokenProvided) {
+    const switched = await call("POST", "/auth/switch-tenant", { tenant_id: id });
+    if (!switched.access_token) throw new Error("Workspace selection did not return an access token");
+    token = switched.access_token;
+  }
+  const current = await call("GET", "/tenants/me");
+  if (current.id !== id) throw new Error(`The session is not scoped to "${wanted}"`);
+  console.log(`Workspace: ${current.name} (${current.id})`);
 }
 
 async function paged(route) {
@@ -72,14 +83,15 @@ async function paged(route) {
   for (let page = 1; page < 500; page++) {
     const res = await call("GET", `${route}${route.includes("?") ? "&" : "?"}page=${page}&per_page=100`);
     if (Array.isArray(res)) return res;
-    const rows = res.data || [];
+    const rows = res.data;
+    if (!Array.isArray(rows)) throw new Error(`Unexpected list response from ${route}`);
     out.push(...rows);
     const meta = res.pagination || {};
     const totalPages = meta.total_pages ?? (meta.total !== undefined && meta.per_page ? Math.ceil(meta.total / meta.per_page) : undefined);
-    if (rows.length === 0) break;
-    if (totalPages !== undefined ? page >= totalPages : meta.has_more === false || rows.length < (meta.per_page || rows.length)) break;
+    if (rows.length === 0) return out;
+    if (totalPages !== undefined ? page >= totalPages : meta.has_more === false || rows.length < (meta.per_page || rows.length)) return out;
   }
-  return out;
+  throw new Error(`Pagination limit reached for ${route}`);
 }
 
 const norm = (s) => (s || "").trim().toLowerCase().replace(/\s+/g, " ");
@@ -91,23 +103,23 @@ const plan = (verb, what) => console.log(`${DRY ? "would " : ""}${verb}: ${what}
 
 async function pushArticles() {
   const { articles } = JSON.parse(await readFile(path.join(PACK, "articles.json"), "utf8"));
-  const existing = await paged("/tenants/me/knowledge-base");
+  const existing = await paged("/knowledge-base");
   const byQ = new Map(existing.map((e) => [norm(e.question), e]));
   for (const a of articles) {
     const cur = byQ.get(norm(a.question));
     if (!cur) {
       plan("create article", a.question);
-      if (DRY || await attempt(`create article "${a.question}"`, () => call("POST", "/tenants/me/knowledge-base", { category: a.category, question: a.question, answer: a.answer, is_active: true }))) summary.created++;
+      if (DRY || await attempt(`create article "${a.question}"`, () => call("POST", "/knowledge-base", { category: a.category, question: a.question, answer: a.answer, is_active: true }))) summary.created++;
     } else if (cur.answer !== a.answer || (cur.category || "") !== a.category || cur.is_active === false) {
       plan("update article", a.question);
-      if (DRY || await attempt(`update article "${a.question}"`, () => call("PUT", `/tenants/me/knowledge-base/${cur.id}`, { category: a.category, question: a.question, answer: a.answer, is_active: true }))) summary.updated++;
+      if (DRY || await attempt(`update article "${a.question}"`, () => call("PUT", `/knowledge-base/${cur.id}`, { category: a.category, question: a.question, answer: a.answer, is_active: true }))) summary.updated++;
     } else summary.unchanged++;
   }
 }
 
 async function pushDocuments() {
   const files = (await readdir(PACK)).filter((f) => f.endsWith(".md") && !/^(README|PLAYBOOK)\.md$/.test(f));
-  const existing = await paged("/tenants/me/knowledge-base/documents");
+  const existing = await paged("/knowledge-base/documents");
   const names = new Set(existing.map((d) => norm(d.filename || d.name || d.file_name)));
   for (const f of files) {
     if (names.has(norm(f))) { summary.skipped++; console.log(`exists: ${f}`); continue; }
@@ -117,14 +129,14 @@ async function pushDocuments() {
     if (await attempt(`upload document ${f}`, () => {
       const form = new FormData();
       form.append("file", new Blob([bytes], { type: "text/markdown" }), f);
-      return call("POST", "/tenants/me/knowledge-base/documents", form);
+      return call("POST", "/knowledge-base/documents", form);
     })) summary.created++;
   }
 }
 
 async function pushMenu() {
   const { items } = JSON.parse(await readFile(path.join(PACK, "menu.json"), "utf8"));
-  const existing = await paged("/tenants/me/menu");
+  const existing = await paged("/menu");
   const byName = new Map(existing.map((m) => [norm(m.name), m]));
   for (const item of items) {
     const body = { name: item.name, category: item.category, description: item.description, is_available: item.is_available !== false, sort_order: item.sort_order };
@@ -132,22 +144,22 @@ async function pushMenu() {
     const cur = byName.get(norm(item.name));
     if (!cur) {
       plan("create menu item", item.name);
-      if (DRY || await attempt(`create menu item ${item.name}`, () => call("POST", "/tenants/me/menu", body))) summary.created++;
+      if (DRY || await attempt(`create menu item ${item.name}`, () => call("POST", "/menu", body))) summary.created++;
     } else if ((cur.description || "") !== (item.description || "") || Number(cur.price ?? -1) !== Number(item.price ?? -1) || (cur.category || "") !== (item.category || "")) {
       plan("update menu item", item.name);
-      if (DRY || await attempt(`update menu item ${item.name}`, () => call("PUT", `/tenants/me/menu/${cur.id}`, body))) summary.updated++;
+      if (DRY || await attempt(`update menu item ${item.name}`, () => call("PUT", `/menu/${cur.id}`, body))) summary.updated++;
     } else summary.unchanged++;
   }
 }
 
 async function pushUrls() {
   const lines = (await readFile(path.join(PACK, "urls.txt"), "utf8")).split("\n").map((l) => l.trim()).filter((l) => l && !l.startsWith("#"));
-  const existing = await paged("/tenants/me/knowledge-base/urls");
+  const existing = await paged("/knowledge-base/urls");
   const have = new Set(existing.map((u) => norm(u.url)));
   for (const url of lines) {
     if (have.has(norm(url))) { summary.skipped++; continue; }
     plan("add url", url);
-    if (DRY || await attempt(`add url ${url}`, () => call("POST", "/tenants/me/knowledge-base/urls", { url }))) summary.created++;
+    if (DRY || await attempt(`add url ${url}`, () => call("POST", "/knowledge-base/urls", { url }))) summary.created++;
   }
 }
 

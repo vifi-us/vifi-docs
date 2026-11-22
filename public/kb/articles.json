@@ -250,7 +250,7 @@
     {
       "category": "Getting started",
       "question": "How do I sign up?",
-      "answer": "Go to app.vifi.us slash register, enter your email and a password or sign in with Google, verify your email, and give your business name. The setup guide starts right away."
+      "answer": "Go to app.vifi.us slash register, enter your email and a password or sign in with Google or Apple, verify your email, and give your business name. The setup guide starts right away."
     },
     {
       "category": "Getting started",
@@ -560,7 +560,7 @@
     {
       "category": "Troubleshooting",
       "question": "I can't sign in to ViFi. What should I do?",
-      "answer": "Use Forgot password on the sign-in page, or sign in with Google if that is how you signed up. If two-factor is the problem, use a backup code, or email support@vifi.us from the account's email address."
+      "answer": "Use Forgot password on the sign-in page, or use Google or Apple if that is how you signed up. If two-factor is the problem, use a backup code, or email support@vifi.us from the account's email address."
     },
     {
       "category": "Troubleshooting",
@@ -570,22 +570,22 @@
     {
       "category": "Support",
       "question": "My ViFi line isn't answering calls. What do I do?",
-      "answer": "That counts as an emergency for us. Tell me your workspace name and I'll connect you to the ViFi on-call team right now, at any hour. If the transfer doesn't go through, I'll take an urgent message with a callback number."
+      "answer": "Check that your carrier is forwarding calls to your ViFi number. If calls still fail, email support@vifi.us with your workspace name, an example call time and time zone, and what the caller heard."
     },
     {
       "category": "Support",
       "question": "What counts as an emergency for ViFi support?",
-      "answer": "An emergency is a current customer whose line isn't answering, whose calls are failing, or whose callers can't get through right now. Those go straight to the on-call team at any hour. Setup questions and billing issues are handled during business hours."
+      "answer": "If callers cannot reach your business through ViFi, report it to support@vifi.us with your workspace name and the time of a failed call. Say whether all calls or only some calls are affected."
     },
     {
       "category": "Support",
       "question": "Is there after-hours support?",
-      "answer": "Yes for outages: if your ViFi line is down, I'll connect you to the on-call team at any hour. For everything else, I can take a message and the team replies within one business day."
+      "answer": "You can email support@vifi.us at any time. Most replies go out within one business day. For a call-routing problem, include your workspace and the time of an example call."
     },
     {
       "category": "Support",
       "question": "How do I reach ViFi sales?",
-      "answer": "During business hours I can transfer you to ViFi sales right now. Outside those hours, leave your name, number, business, and email, and sales will call you back within one business day."
+      "answer": "Email hello@vifi.us with your business name and what you want ViFi to help with."
     },
     {
       "category": "Support",
@@ -595,7 +595,7 @@
     {
       "category": "Troubleshooting",
       "question": "Calls to my business are ringing but nobody answers. Is ViFi down?",
-      "answer": "Usually that means call forwarding to your ViFi number was turned off on your phone or carrier, not that ViFi is down. Check forwarding first. If forwarding is on and calls still fail, tell me and I'll connect you to the on-call team."
+      "answer": "Check whether call forwarding to your ViFi number is active. If it is and the problem continues, send support@vifi.us the time of a failed call so the team can investigate."
     }
   ]
 }
