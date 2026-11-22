@@ -1,0 +1,23 @@
+# Help-center pages worth adding as URL sources in the ViFi workspace's knowledge base.
+# The platform re-fetches URL sources on a schedule (KB self-refresh), so these stay current
+# as the help center changes. Add the curated documents first; add these for depth.
+https://docs.vifi.us/start-here/what-vifi-does/
+https://docs.vifi.us/start-here/setup-guide/
+https://docs.vifi.us/start-here/forward-your-calls/
+https://docs.vifi.us/billing/plans-and-pricing/
+https://docs.vifi.us/billing/free-trial/
+https://docs.vifi.us/billing/usage-and-guardrails/
+https://docs.vifi.us/billing/change-or-cancel/
+https://docs.vifi.us/your-agent/knowledge-base/
+https://docs.vifi.us/your-agent/transfers/
+https://docs.vifi.us/your-agent/voice-and-language/
+https://docs.vifi.us/your-agent/recording-and-compliance/
+https://docs.vifi.us/calls-and-callers/messages/
+https://docs.vifi.us/connect-your-tools/overview/
+https://docs.vifi.us/reference/feature-status/
+https://docs.vifi.us/reference/text-message-rules/
+https://docs.vifi.us/reference/data-and-privacy/
+https://docs.vifi.us/fix-a-problem/calls-not-reaching-vifi/
+https://docs.vifi.us/fix-a-problem/contact-support/
+https://vifi.us/pricing
+https://vifi.us/faq
